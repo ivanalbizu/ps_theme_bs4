@@ -1,0 +1,42 @@
+.card-product {
+    //width: 25%;
+}
+
+.featured-products .products {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1em;
+    margin-right: -1em;
+ }
+ 
+.card-product {
+    flex: 1 0 60%;
+    box-sizing: border-box;
+    margin: 1rem 1em;
+
+    background-color: #d2d2d2;
+    &__body {
+        padding: 1rem 1em;
+    }
+    &__footer {
+        padding: 1rem 1em 0;
+    }
+}
+@include media-breakpoint-up(sm) {
+    .card-product {
+        flex: 1 0 30%;
+        max-width: calc(50% -  1em);
+    }
+}
+@include media-breakpoint-up(md) {
+    .card-product {
+        flex: 1 0 25%;
+        max-width: calc(33.3333% - 2em);
+    }
+}
+@include media-breakpoint-up(lg) {
+    .card-product {
+        flex: 1 0 20%;
+        max-width: calc(25% - 1em);
+    }
+}
