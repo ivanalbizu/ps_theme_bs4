@@ -24,10 +24,8 @@
  *}
 
 <div id="block_myaccount_infos" class="col-md-2 links wrapper">
-  <h3 class="myaccount-title hidden-sm-down">
-    <a class="text-uppercase" href="{$urls.pages.my_account}" rel="nofollow">
+  <h3 class="footer-title hidden-sm-down">
       {l s='Your account' d='Shop.Theme.Customeraccount'}
-    </a>
   </h3>
   <div class="title clearfix hidden-md-up" data-target="#footer_account_list" data-toggle="collapse">
     <span class="h3">{l s='Your account' d='Shop.Theme.Customeraccount'}</span>
@@ -39,6 +37,11 @@
     </span>
   </div>
   <ul class="account-list collapse" id="footer_account_list">
+    <li>
+      <a href="{$urls.pages.my_account}" title="{$urls.pages.my_account}" rel="nofollow">
+        {l s='Your account' d='Shop.Theme.Customeraccount'}
+      </a>
+    </li>
     {foreach from=$my_account_urls item=my_account_url}
         <li>
           <a href="{$my_account_url.url}" title="{$my_account_url.title}" rel="nofollow">

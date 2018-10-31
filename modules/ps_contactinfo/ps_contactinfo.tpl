@@ -23,9 +23,9 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 
-<div class="block-contact col-md-4 links wrapper">
+<div class="col-md-4 links wrapper">
   <div class="hidden-sm-down">
-    <h4 class="text-uppercase block-contact-title">{l s='Store information' d='Shop.Theme.Global'}</h4>
+    <h3 class="footer-title">{l s='Store information' d='Shop.Theme.Global'}</h3>
       {$contact_infos.address.formatted nofilter}
       {if $contact_infos.phone}
         <br>
