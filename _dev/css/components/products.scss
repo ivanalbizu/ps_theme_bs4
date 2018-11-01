@@ -462,8 +462,13 @@
       padding-right: 1.875rem;
       @include box-shadow-light;
     }
-    ul li {
-      margin-right: $small-space;
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: -1rem; //Corregir el espaciado a Bottom de los Labels/Inputs que viene por defecto por si saltan a mas de una linea
+      li {
+        margin-right: $small-space;
+      }
     }
     .color {
       margin-left: 0;

@@ -246,8 +246,9 @@
     background: $gray-light;
     .header-nav {
       background: white;
-      margin-bottom: 0.625rem;
+      //margin-bottom: 0.625rem;
       color: $gray-darker;
+      border-bottom: 0;
       .top-logo {
         //line-height: 50px;
         //vertical-align: middle;

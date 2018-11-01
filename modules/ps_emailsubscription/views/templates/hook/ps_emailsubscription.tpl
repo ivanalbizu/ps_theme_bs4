@@ -27,18 +27,6 @@
   <p id="block-newsletter-label">{l s='Get our latest news and special sales' d='Shop.Theme.Global'}</p>
   <form action="{$urls.pages.index}#footer" method="post">
     <div class="btn-group col-xs-12">
-      <input
-        class="btn btn-primary float-xs-right hidden-xs-down"
-        name="submitNewsletter"
-        type="submit"
-        value="{l s='Subscribe' d='Shop.Theme.Actions'}"
-      >
-      <input
-        class="btn btn-primary float-xs-right hidden-sm-up"
-        name="submitNewsletter"
-        type="submit"
-        value="{l s='OK' d='Shop.Theme.Actions'}"
-      >
       <div class="input-wrapper">
         <input
           name="email"
@@ -48,8 +36,14 @@
           aria-labelledby="block-newsletter-label"
         >
       </div>
+      <input
+        class="btn btn-primary"
+        name="submitNewsletter"
+        type="submit"
+        value="{l s='OK' d='Shop.Theme.Actions'}"
+        {* s='Subscribe' Dos opciones de traducciones. Si se opta por esta. Será necesario en Mobile partir en dos filar el input text y el input submit*}
+      >
       <input type="hidden" name="action" value="0">
-      <div class="clearfix"></div>
     </div>
     <div class="col-xs-12">
         {if $conditions}
