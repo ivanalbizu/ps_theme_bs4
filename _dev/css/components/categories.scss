@@ -389,7 +389,8 @@
           }
           .collapse {
             display: none;
-            &.in {
+            &.in,
+            &.show {
               display: block;
             }
           }
