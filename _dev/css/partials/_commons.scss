@@ -142,7 +142,8 @@ small.label, small.value {
     outline: none;
   }
   .input-group-btn {
-    height: 100%;
+    //revisar si esta regla es necesaria: en el Login se corrige altura boton mostrar
+    //height: 100%;
     > .btn {
       border: 0;
       box-shadow: none;

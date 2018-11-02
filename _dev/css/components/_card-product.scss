@@ -1,14 +1,10 @@
-.card-product {
-    //width: 25%;
-}
-
 .featured-products .products {
     display: flex;
     flex-wrap: wrap;
     margin-left: -1em;
     margin-right: -1em;
- }
- 
+}
+
 .card-product {
     flex: 1 0 60%;
     box-sizing: border-box;
@@ -20,6 +16,22 @@
     }
     &__footer {
         padding: 1rem 1em 0;
+    }
+}
+.layout-left-column,
+.layout-right-column {
+    .card-product {
+        flex: 1 0 60%;
+        margin: 1rem 0;
+        @include media-breakpoint-up(sm) {
+            flex: 1 0 30%;
+            max-width: calc(50% -  1em);
+            margin: 1rem 1em;
+        }
+        @include media-breakpoint-up(md) {
+            flex: 1 0 25%;
+            max-width: calc(33.3333% - 2em);
+        }
     }
 }
 @include media-breakpoint-up(sm) {
