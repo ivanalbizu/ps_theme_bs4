@@ -22,7 +22,9 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<section class="featured-products clearfix">
+
+{*version orginal, sin swiper*}
+<section class="featured-products">
   <h1 class="h1 products-section-title text-uppercase">
     {l s='Popular Products' d='Shop.Theme.Catalog'}
   </h1>
@@ -34,4 +36,19 @@
   <a class="all-product-link float-xs-left float-md-right h4" href="{$allProductsLink}">
     {l s='All products' d='Shop.Theme.Catalog'}<i class="material-icons">&#xE315;</i>
   </a>
+</section>
+
+{*version con swiper. necesita adaptación*}
+<section class="featured-products">
+  <h1 class="h1 products-section-title text-uppercase">{l s='Popular Products' d='Shop.Theme.Catalog'}</h1>
+  <div class="products swiper-container">
+    <div class="swiper-wrapper">
+      {foreach from=$products item="product"}
+        <div class="swiper-slide"> {include file="catalog/_partials/miniatures/product.tpl" product=$product}</div>
+      {/foreach}
+    </div>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
 </section>

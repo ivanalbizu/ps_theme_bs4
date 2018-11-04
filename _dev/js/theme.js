@@ -27,6 +27,10 @@ import 'bootstrap/dist/js/bootstrap.min';
 import 'flexibility';
 import 'bootstrap-touchspin';
 
+//swiper plugin
+import 'swiper/dist/js/swiper.min';
+import SwiperFeaturedProducts from './components/featured-products-slider';
+
 import './responsive';
 import './checkout';
 import './customer';
@@ -48,6 +52,7 @@ import './lib/jquery.scrollbox.min';
 
 import './components/block-cart';
 
+
 // "inherit" EventEmitter
 for (var i in EventEmitter.prototype) {
   prestashop[i] = EventEmitter.prototype[i];
@@ -61,9 +66,11 @@ $(document).ready(() => {
   let topMenu = new TopMenu(topMenuEl);
   let productMinitature = new ProductMinitature();
   let productSelect  = new ProductSelect();
+  const swiperFeaturedProducts = new SwiperFeaturedProducts();
   dropDown.init();
   form.init();
   topMenu.init();
   productMinitature.init();
   productSelect.init();
+  swiperFeaturedProducts.init();
 });
