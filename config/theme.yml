@@ -51,8 +51,8 @@ global_settings:
   configuration:
     PS_IMAGE_QUALITY: png
   modules:
-   to_enable:
-     - ps_linklist
+    to_enable:
+      - ps_linklist
   hooks:
     modules_to_hook:
       displayNav1:
@@ -66,10 +66,11 @@ global_settings:
         - ps_mainmenu
         - ps_searchbar
       displayHome:
-        - ps_imageslider
         - ps_featuredproducts
         - ps_banner
         - ps_customtext
+      displaySlider:
+        - ps_imageslider
       displayFooterBefore:
         - ps_emailsubscription
         - ps_socialfollow
@@ -90,6 +91,10 @@ global_settings:
         - ps_featuredproducts
       displayCrossSellingShoppingCart:
         - ps_featuredproducts
+  custom_hooks:
+    - name: displaySlider
+      title: displaySlider
+      description: Display Image Slider module in a separate hook
 
   image_types:
     cart_default:

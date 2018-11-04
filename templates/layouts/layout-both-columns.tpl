@@ -51,7 +51,11 @@
       {block name='notifications'}
         {include file='_partials/notifications.tpl'}
       {/block}
-
+      
+      {if $page.page_name == 'index'}
+        {hook h='displaySlider'}
+      {/if}
+      
       <section id="wrapper">
         {hook h="displayWrapperTop"}
         <div class="container">

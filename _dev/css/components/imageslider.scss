@@ -1,13 +1,17 @@
 .carousel {
   box-shadow: 1px 1px 7px 0 rgba(0, 0, 0, 0.15);
-  margin-bottom: 1.5rem;
+  position: relative;
   .direction {
     z-index: auto;
   }
   .carousel-inner {
-    height: 340px;
-    @media (max-width: 767px) {
-      height: auto;
+    height: auto;
+    margin: 0;
+    //@media (max-width: 767px) {
+    //  height: auto;
+    //}
+    figure {
+      margin: 0;
     }
   }
   .carousel-item {
@@ -46,6 +50,14 @@
   }
   .carousel-control {
     opacity: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 90px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
     .icon-next,
     .icon-prev {
       &::before {
@@ -61,15 +73,33 @@
         }
       }
     }
+    .icon-prev,
+    .icon-next {
+      position: absolute;
+      top: 50%;
+      z-index: 5;
+      display: inline-block;
+    }
     .icon-prev {
       left: 1rem;
     }
     .icon-next {
-      right: 2rem;
+      right: 1rem;
     }
     &.left,
     &.right {
       background: none;
+      &:hover {
+        background: rgba(221,239,240,0.5);
+      }
+    }
+    &.left {
+      left: 0;
+      right: auto;
+    }
+    &.right {
+      right: 0;
+      left: auto;
     }
   }
 }
