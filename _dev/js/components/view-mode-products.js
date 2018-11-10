@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import prestashop from 'prestashop';
 
 export default class ViewModeProducts {
     init(){

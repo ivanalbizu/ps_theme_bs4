@@ -77,6 +77,5 @@ $(document).ready(() => {
   productMinitature.init();
   productSelect.init();
   swiperFeaturedProducts.init();
-  console.log('ivan');
   viewModeProducts.init();
 });

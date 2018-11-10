@@ -27,6 +27,7 @@ import prestashop from 'prestashop';
 import 'velocity-animate';
 
 import ProductMinitature from './components/product-miniature';
+import ViewModeProducts from './components/view-mode-products';
 
 $(document).ready(() => {
   prestashop.on('clickQuickView', function (elm) {
@@ -158,4 +159,6 @@ function updateProductListDOM (data) {
   let productMinitature = new ProductMinitature();
   productMinitature.init();
 
+  let viewModeProducts = new ViewModeProducts();
+  viewModeProducts.init();
 }
