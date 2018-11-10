@@ -4,7 +4,8 @@ export default class ViewModeProducts {
     init(){
         this.viewModeProducts();
     }
-    
+    //TO-DO
+    //Save on localStorage a Theme Name Mode View
     viewModeProducts() {
         $('.js-view-product-mode').on(
             'click',
