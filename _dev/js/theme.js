@@ -31,6 +31,9 @@ import 'bootstrap-touchspin';
 import 'swiper/dist/js/swiper.min';
 import SwiperFeaturedProducts from './components/featured-products-slider';
 
+//View mode grid/list products
+import ViewModeProducts from './components/view-mode-products';
+
 import './responsive';
 import './checkout';
 import './customer';
@@ -67,10 +70,13 @@ $(document).ready(() => {
   let productMinitature = new ProductMinitature();
   let productSelect  = new ProductSelect();
   const swiperFeaturedProducts = new SwiperFeaturedProducts();
+  const viewModeProducts = new ViewModeProducts();
   dropDown.init();
   form.init();
   topMenu.init();
   productMinitature.init();
   productSelect.init();
   swiperFeaturedProducts.init();
+  console.log('ivan');
+  viewModeProducts.init();
 });

@@ -54,3 +54,29 @@
         padding: 1rem 1em 0;
     }
 }
+
+
+.js-product-mode-list {
+    & > .row {
+        flex-direction: column;
+    }
+    @media (min-width: 768px) {
+        .products>.card-product,
+        .products>.card-product {
+            width: 100%;
+            max-width: calc(100% - 2em);
+            flex-direction: row;
+            display: flex;
+            align-items: center;
+        }
+        .card-product__img {
+            width: 60%;
+        }
+        .card-product__body {
+            width: 20%;
+        }
+        .card-product__img {
+            width: 20%;
+        }
+    }
+}

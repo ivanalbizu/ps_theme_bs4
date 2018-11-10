@@ -23,14 +23,14 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div id="js-product-list-top" class="row products-selection align-items-center">
-  <div class="col-md-5 hidden-sm-down total-products">
+  <div class="col-md-4 hidden-sm-down total-products">
     {if $listing.pagination.total_items > 1}
       <span>{l s='There are %product_count% products.' d='Shop.Theme.Catalog' sprintf=['%product_count%' => $listing.pagination.total_items]}</span>
     {else if $listing.pagination.total_items > 0}
       <span>{l s='There is 1 product.' d='Shop.Theme.Catalog'}</span>
     {/if}
   </div>
-  <div class="col-md-7">
+  <div class="col-md-8">
     <div class="row sort-by-row">
 
       {block name='sort_by'}

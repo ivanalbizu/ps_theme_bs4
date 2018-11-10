@@ -58,8 +58,7 @@ $(document).ready(function () {
     );
   }
 
-  function imageScrollBox()
-  {
+  function imageScrollBox() {
     if ($('#main .js-qv-product-images li').length > 2) {
       $('#main .js-qv-mask').addClass('scroll');
       $('.scroll-box-arrows').addClass('scroll');
@@ -80,8 +79,7 @@ $(document).ready(function () {
     }
   }
 
-  function createInputFile()
-  {
+  function createInputFile() {
     $('.js-file-input').on('change', (event) => {
       let target, file;
 
@@ -91,8 +89,7 @@ $(document).ready(function () {
     });
   }
 
-  function createProductSpin()
-  {
+  function createProductSpin() {
     let quantityInput = $('#quantity_wanted');
     quantityInput.TouchSpin({
       verticalbuttons: true,
