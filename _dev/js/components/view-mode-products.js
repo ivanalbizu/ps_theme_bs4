@@ -16,7 +16,7 @@ export default class ViewModeProducts {
                     return v === 'view_list' ? 'view_module' : 'view_list';
                 });
             }
-        ); 
+        );
     }
     domInitViewMode() {
         if(typeof(Storage) !== "undefined") {
@@ -34,9 +34,6 @@ export default class ViewModeProducts {
 }
 
 function saveViewModeProduct(data) {
-    if(typeof(Storage) !== "undefined") {
-        if (localStorage.view_mode_product) {
-            localStorage.view_mode_product = data;
-        }
-    }
+    if(typeof(Storage) !== "undefined")
+        localStorage.view_mode_product = data;
 }

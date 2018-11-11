@@ -23,7 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div class="col-sm-4 col-md-2 hidden-sm-down">
-  <button class="js-view-product-mode">
+  <button class="btn js-view-product-mode">
     <i class="material-icons">view_list</i>
   </button>
 </div>
