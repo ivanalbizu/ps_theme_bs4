@@ -39,27 +39,25 @@
 
     {foreach from=$facets item="facet"}
       {if $facet.displayed}
-        <section class="facet clearfix">
-          <h1 class="h6 facet-title hidden-sm-down">{$facet.label}</h1>
+        <section class="facet">
+          <h2 class="h6 facet-title hidden-sm-down">{$facet.label}</h2>
           {assign var=_expand_id value=10|mt_rand:100000}
           {assign var=_collapse value=true}
           {foreach from=$facet.filters item="filter"}
             {if $filter.active}{assign var=_collapse value=false}{/if}
           {/foreach}
           <div class="title hidden-md-up" data-target="#facet_{$_expand_id}" data-toggle="collapse"{if !$_collapse} aria-expanded="true"{/if}>
-            <h1 class="h6 facet-title">{$facet.label}</h1>
-            <span class="float-xs-right">
-              <span class="navbar-toggler collapse-icons">
-                <i class="material-icons add">&#xE313;</i>
-                <i class="material-icons remove">&#xE316;</i>
-              </span>
+            <h2 class="h6 facet-title">{$facet.label}</h2>
+            <span class="navbar-toggler collapse-icons">
+              <i class="material-icons add">&#xE313;</i>
+              <i class="material-icons remove">&#xE316;</i>
             </span>
           </div>
 
           {if $facet.widgetType !== 'dropdown'}
 
             {block name='facet_item_other'}
-              <ul id="facet_{$_expand_id}" class="collapse{if !$_collapse} in{/if}">
+              <ul id="facet_{$_expand_id}" class="collapse{if !$_collapse} in{/if} {if $facet.label === 'Color'} facet-color{/if}">
                 {foreach from=$facet.filters key=filter_key item="filter"}
                   {if $filter.displayed}
                     <li>
@@ -132,7 +130,7 @@
                           {l s='(no filter)' d='Shop.Theme.Global'}
                         {/if}
                       </span>
-                      <i class="material-icons float-xs-right">&#xE5C5;</i>
+                      <i class="material-icons">&#xE5C5;</i>
                     </a>
                     <div class="dropdown-menu">
                       {foreach from=$facet.filters item="filter"}

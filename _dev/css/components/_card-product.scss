@@ -13,7 +13,7 @@
             margin: 1rem 0;
             @include media-breakpoint-up(sm) {
                 flex: 1 0 30%;
-                max-width: calc(50% -  1em);
+                max-width: calc(50% -  2em);
                 margin: 1rem 1em;
             }
             @include media-breakpoint-up(md) {
@@ -31,7 +31,7 @@
         
         @include media-breakpoint-up(sm) {
             flex: 1 0 30%;
-            max-width: calc(50% -  1em);
+            max-width: calc(50% -  2em);
         }
         @include media-breakpoint-up(md) {
             flex: 1 0 25%;
@@ -39,7 +39,7 @@
         }
         @include media-breakpoint-up(lg) {
             flex: 1 0 20%;
-            max-width: calc(25% - 1em);
+            max-width: calc(25% - 2em);
         }
     }
 }

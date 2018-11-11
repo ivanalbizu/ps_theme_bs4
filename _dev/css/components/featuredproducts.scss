@@ -201,11 +201,11 @@
 //Productos: 3 columnas al aplicar width: 
 #products {
   .products {
-    margin-left: 0;
-    margin-right: 0;
+    //margin-left: 0;
+    //margin-right: 0;
     @include media-breakpoint-up(sm) {
-      margin-left: -2%;
-      margin-right: -2%;
+      //margin-left: -2%;
+      //margin-right: -2%;
       .product-miniature {
         margin: 0 2%;
         width: 46%;
