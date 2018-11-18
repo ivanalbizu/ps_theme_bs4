@@ -60,7 +60,7 @@
     & > .row {
         flex-direction: column;
     }
-    @media (min-width: 768px) {
+    //@include media-breakpoint-up(sm) {
         .products>.card-product,
         .products>.card-product {
             width: 100%;
@@ -78,5 +78,5 @@
         .card-product__img {
             width: 20%;
         }
-    }
+    //}
 }

@@ -1,0 +1,8 @@
+.swiper-container-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-custom, .swiper-pagination-fraction {
+    position: static;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 60px;
+}
