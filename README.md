@@ -10,3 +10,10 @@
 ```
     /templates/layouts/layout-both-columns.tpl
 ```
+
+## SwiperJS plugin Home
+https://idangero.us/swiper/
+
+## Add Products view Mode
+Button to change Grid columns / Row columns
+Save to localStorage
