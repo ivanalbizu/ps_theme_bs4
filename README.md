@@ -22,6 +22,7 @@ Add Bootstrap visibility classes previous Bootstrap
 
 ## SwiperJS plugin Home
 > New JS File: /_dev/js/components/featured-products-slider.js
+
 > Init plugin on /_dev/js/theme.js
 ```
 //swiper plugin
@@ -46,6 +47,7 @@ Button to change Grid columns / Row columns.
 Save to localStorage
 
 > New JS File: /_dev/js/components/view-mode-products.js
+
 > Init plugin on /_dev/js/theme.js
 ```
 //View mode grid/list products
