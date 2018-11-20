@@ -11,19 +11,19 @@ Add Bootstrap visibility classes previous Bootstrap
 ## Slider Home full Screen
 > New Hook definition: theme.yml
 ```
-    displaySlider:
-        - ps_imageslider
+displaySlider:
+    - ps_imageslider
 ```
 > Hook called
 ```
-    /templates/layouts/layout-both-columns.tpl
+/templates/layouts/layout-both-columns.tpl
 ```
 
 
 ## SwiperJS plugin Home
-> New JS File: /_dev/js/components/featured-products-slider.js
+> New JS File: `/_dev/js/components/featured-products-slider.js`
 
-> Init plugin on /_dev/js/theme.js
+> Init plugin: `/_dev/js/theme.js`
 ```
 //swiper plugin
 import 'swiper/dist/js/swiper.min';
@@ -36,7 +36,7 @@ $(document).ready(() => {
 ```
 > Front called
 ```
-    /modules/ps_featuredproducts/views/templates/hook/ps_featuredproducts.tpl
+/modules/ps_featuredproducts/views/templates/hook/ps_featuredproducts.tpl
 ```
 > https://idangero.us/swiper/
 
@@ -46,9 +46,9 @@ Button to change Grid columns / Row columns.
 
 Save to localStorage
 
-> New JS File: /_dev/js/components/view-mode-products.js
+> New JS File: `/_dev/js/components/view-mode-products.js`
 
-> Init plugin on /_dev/js/theme.js
+> Init plugin: `/_dev/js/theme.js`
 ```
 //View mode grid/list products
 import ViewModeProducts from './components/view-mode-products';
@@ -60,5 +60,5 @@ $(document).ready(() => {
 ```
 > Front called
 ```
-    /templates/catalog/_partials/sort-orders.tpl
+/templates/catalog/_partials/sort-orders.tpl
 ```
