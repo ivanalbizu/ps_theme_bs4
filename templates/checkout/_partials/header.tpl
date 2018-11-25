@@ -58,7 +58,7 @@ Este código comentado es el original
   {block name='header_top'}
     <div class="header-top hidden-md-up">
       <div class="container">
-         <div class="row">
+        <div class="row">
           <div class="col-sm-12">
             <div class="row">
               {hook h='displayTop'}
@@ -125,8 +125,12 @@ Este código comentado es el original
         </div>
         <div class="col-md-10 col-sm-12 position-static">
           <div class="row align-items-center">
-            {hook h='displayTop'}
-            <div class="clearfix"></div>
+            <div class="menu col-lg-8 col-md-7 js-top-menu position-static hidden-sm-down" id="_desktop_top_menu">
+              {hook h='displayTopMainMenu'}
+            </div>
+            <div class="col-lg-4 col-md-5 col-sm-12 search-widget">
+              {hook h='displayTopSearch'}
+            </div>
           </div>
         </div>
       </div>

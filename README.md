@@ -8,6 +8,23 @@ Raplace classes on files. Not finish.
 Add Bootstrap visibility classes previous Bootstrap
 
 
+## Separate Main Menu and Searchbar in new Hooks
+Separate for wrapper with bootstrap classes in diferrent pages
+
+> New Hook definition: theme.yml
+```
+displayTopMainMenu:
+    - ps_mainmenu
+displayTopSearch:
+    - ps_searchbar
+```
+> Hooks called
+```
+templates/_partials/header.tpl
+templates/checkout/_partials/header.tpl
+```
+
+
 ## Slider Home full Screen
 > New Hook definition: theme.yml
 ```

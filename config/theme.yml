@@ -62,8 +62,12 @@ global_settings:
         - ps_currencyselector
         - ps_customersignin
         - ps_shoppingcart
-      displayTop:
+#      displayTop:
+#        - ps_mainmenu
+#        - ps_searchbar
+      displayTopMainMenu:
         - ps_mainmenu
+      displayTopSearch:
         - ps_searchbar
       displayHome:
         - ps_featuredproducts
