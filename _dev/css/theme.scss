@@ -35,7 +35,8 @@
 //swiper plugin
 @import "~swiper/dist/css/swiper.min.css";
 @import "components/featured-products-slider";
-
+//Material Icons vida DATA-ATTR
+@import "components/material-icons-data";
 
 /*** HEADER ***/
 #header {
@@ -52,7 +53,7 @@
     }
   }
   .header-nav {
-    border-bottom: $gray-light 2px solid;
+    border-bottom: $gray-light 1px solid;
     //max-height: 50px;
     //margin-bottom: 30px;
     #menu-icon {

@@ -30,72 +30,63 @@
 
 {block name='page_content'}
   <div class="row">
-    <div class="links">
 
-      <a class="col-lg-4 col-md-6 col-sm-6 col-xs-12" id="identity-link" href="{$urls.pages.identity}">
-        <span class="link-item">
-          <i class="material-icons">&#xE853;</i>
+    <div class="col-lg-4 col-sm-6 col-xs-12 mb-4">
+      <a class="links-account links-account--column links-account--big p-3" id="identity-link" href="{$urls.pages.identity}" data-icon="account_circle">
           {l s='Information' d='Shop.Theme.Customeraccount'}
-        </span>
       </a>
-
-      {if $customer.addresses|count}
-        <a class="col-lg-4 col-md-6 col-sm-6 col-xs-12" id="addresses-link" href="{$urls.pages.addresses}">
-          <span class="link-item">
-            <i class="material-icons">&#xE56A;</i>
-            {l s='Addresses' d='Shop.Theme.Customeraccount'}
-          </span>
-        </a>
-      {else}
-        <a class="col-lg-4 col-md-6 col-sm-6 col-xs-12" id="address-link" href="{$urls.pages.address}">
-          <span class="link-item">
-            <i class="material-icons">&#xE567;</i>
-            {l s='Add first address' d='Shop.Theme.Customeraccount'}
-          </span>
-        </a>
-      {/if}
-
-      {if !$configuration.is_catalog}
-        <a class="col-lg-4 col-md-6 col-sm-6 col-xs-12" id="history-link" href="{$urls.pages.history}">
-          <span class="link-item">
-            <i class="material-icons">&#xE916;</i>
-            {l s='Order history and details' d='Shop.Theme.Customeraccount'}
-          </span>
-        </a>
-      {/if}
-
-      {if !$configuration.is_catalog}
-        <a class="col-lg-4 col-md-6 col-sm-6 col-xs-12" id="order-slips-link" href="{$urls.pages.order_slip}">
-          <span class="link-item">
-            <i class="material-icons">&#xE8B0;</i>
-            {l s='Credit slips' d='Shop.Theme.Customeraccount'}
-          </span>
-        </a>
-      {/if}
-
-      {if $configuration.voucher_enabled && !$configuration.is_catalog}
-        <a class="col-lg-4 col-md-6 col-sm-6 col-xs-12" id="discounts-link" href="{$urls.pages.discount}">
-          <span class="link-item">
-            <i class="material-icons">&#xE54E;</i>
-            {l s='Vouchers' d='Shop.Theme.Customeraccount'}
-          </span>
-        </a>
-      {/if}
-
-      {if $configuration.return_enabled && !$configuration.is_catalog}
-        <a class="col-lg-4 col-md-6 col-sm-6 col-xs-12" id="returns-link" href="{$urls.pages.order_follow}">
-          <span class="link-item">
-            <i class="material-icons">&#xE860;</i>
-            {l s='Merchandise returns' d='Shop.Theme.Customeraccount'}
-          </span>
-        </a>
-      {/if}
-
-      {block name='display_customer_account'}
-        {hook h='displayCustomerAccount'}
-      {/block}
-
     </div>
+
+    {if $customer.addresses|count}
+      <div class="col-lg-4 col-sm-6 col-xs-12 mb-4">
+        <a class="links-account links-account--column links-account--big p-3" id="addresses-link" href="{$urls.pages.addresses}" data-icon="person_pin_circle">
+            {l s='Addresses' d='Shop.Theme.Customeraccount'}
+        </a>
+      </div>
+    {else}
+      <div class="col-lg-4 col-sm-6 col-xs-12 mb-4">
+        <a class="links-account links-account--column links-account--big p-3" id="address-link" href="{$urls.pages.address}" data-icon="add_location">
+            {l s='Add first address' d='Shop.Theme.Customeraccount'}
+        </a>
+      </div>
+    {/if}
+
+    {if !$configuration.is_catalog}
+      <div class="col-lg-4 col-sm-6 col-xs-12 mb-4">
+        <a class="links-account links-account--column links-account--big p-3" id="history-link" href="{$urls.pages.history}" data-icon="date_range">
+            {l s='Order history and details' d='Shop.Theme.Customeraccount'}
+        </a>
+      </div>
+    {/if}
+
+    {if !$configuration.is_catalog}
+      <div class="col-lg-4 col-sm-6 col-xs-12 mb-4">
+        <a class="links-account links-account--column links-account--big p-3" id="order-slips-link" href="{$urls.pages.order_slip}" data-icon="receipt">
+            {l s='Credit slips' d='Shop.Theme.Customeraccount'}
+        </a>
+      </div>
+    {/if}
+
+    {if $configuration.voucher_enabled && !$configuration.is_catalog}
+      <div class="col-lg-4 col-sm-6 col-xs-12 mb-4">
+        <a class="links-account links-account--column links-account--big p-3" id="discounts-link" href="{$urls.pages.discount}" data-icon="local_offer">
+            {l s='Vouchers' d='Shop.Theme.Customeraccount'}
+        </a>
+      </div>
+    {/if}
+
+    {if $configuration.return_enabled && !$configuration.is_catalog}
+      <div class="col-lg-4 col-sm-6 col-xs-12 mb-4">
+        <a class="links-account links-account--column links-account--big p-3" id="returns-link" href="{$urls.pages.order_follow}" data-icon="assignment_return">
+            {l s='Merchandise returns' d='Shop.Theme.Customeraccount'}
+        </a>
+      </div>
+    {/if}
+
+    {block name='display_customer_account'}
+      {hook h='displayCustomerAccount'}
+    {/block}
+
   </div>
 {/block}
 

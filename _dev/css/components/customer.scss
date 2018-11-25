@@ -286,6 +286,7 @@
   }
 }
 /*** My account landing page ***/
+/*
 .page-my-account {
   #content {
     .links {
@@ -323,6 +324,7 @@
     }
   }
 }
+*/
 /*** History page ***/
 #history {
   .orders {
@@ -365,4 +367,26 @@
 
 .login-form {
   margin-top: 15px;
+}
+
+.links-account {
+  display: flex;
+  align-items: center;
+  background-color: #FFF;
+  &--column {
+    flex-direction: column;
+    text-align: center;
+  }
+  &--small {
+    &[data-icon]::before {
+      font-size: 1em;
+    }
+  }
+  &--big {
+    &[data-icon]::before {
+      font-size: 3em;
+      height: 1.5em;
+      line-height: 1.5;
+    }
+  }
 }
