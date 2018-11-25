@@ -211,11 +211,13 @@ body#checkout {
       }
     }
     .delivery-option {
+      align-items: center;
       background: $gray-lighter;
       padding: 0.9375rem 0;
       margin-bottom: 0.9375rem;
       label {
         text-align: inherit;
+        margin-bottom: 0;
       }
     }
     .carrier-delay,
@@ -223,6 +225,7 @@ body#checkout {
       display: inline-block;
       word-break: break-word;
       text-align: left;
+      margin-bottom: 0;
     }
     #customer-form,
     #delivery-address,

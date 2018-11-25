@@ -7,6 +7,9 @@
 .cart-item {
   padding: 1rem 0;
 }
+.cart-summary {
+  padding: 1rem;
+}
 .cart-summary-line {
   @include clearfix;
   clear: both;
@@ -115,6 +118,10 @@
     padding-bottom: 0;
     margin-bottom: 0;
   }
+}
+.product-line-grid {
+  display: flex;
+  align-items: center;
 }
 /** CONTENT LEFT **/
 .product-line-grid-left {

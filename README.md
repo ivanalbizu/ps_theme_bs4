@@ -11,7 +11,7 @@ Add Bootstrap visibility classes previous Bootstrap
 ## Separate Main Menu and Searchbar in new Hooks
 Separate for wrapper with bootstrap classes in diferrent pages
 
-> New Hook definition: theme.yml
+> New Hooks definition: theme.yml
 ```
 displayTopMainMenu:
     - ps_mainmenu
