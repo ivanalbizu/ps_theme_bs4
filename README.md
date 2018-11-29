@@ -79,3 +79,20 @@ $(document).ready(() => {
 ```
 /templates/catalog/_partials/sort-orders.tpl
 ```
+
+
+## TO-DO
+Elegir un nombre para el tema
+
+No se han actualizado todos los TPL, por lo que habrán clases del Bootstrap anterior que pueden ser eliminados (ej.: clearfix) y correcciones sobre columnas
+
+Maquetar flechas y alturas de cajas de Swiper de productos actualmente en Home
+
+Darle una vuelta al menú, tanto Escritorio como Responsive
+
+Revisar dependencias de paquetes en Webpack para eliminar mensaje de Vulnerabilidad del repo
+
+Revisar para SourceMaps SASS para que muestre en el DEV del navegador el fichero SCSS origen. Actualmente algunas llamadas de ficheros externos desde themes.scss hace siempre referencia a este fichero
+
+
+Mejora: Añadir Webpack Hot Module Replacement: https://github.com/retyui/prestashop-1.7-webpack-3-hot-module-replacement para conseguir que cambios en TPL / Sass / JS el navegador refresque la página. No sé si puede generar conflictos. Conseguir esto al menos en Sass / JS puede ser muy interesante
