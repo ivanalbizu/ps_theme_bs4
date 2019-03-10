@@ -33,7 +33,8 @@
   <title>{block name='head_seo_title'}{$page.meta.title}{/block}</title>
   <meta name="description" content="{block name='head_seo_description'}{$page.meta.description}{/block}">
   <meta name="keywords" content="{block name='head_seo_keywords'}{$page.meta.keywords}{/block}">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,600,700" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
   {if $page.meta.robots !== 'index'}
     <meta name="robots" content="{$page.meta.robots}">
   {/if}

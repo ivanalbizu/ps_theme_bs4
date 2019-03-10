@@ -5,16 +5,6 @@
     align-items: baseline;
     justify-content: space-between;
   }
-  .up {
-    margin-bottom: 1rem;
-    .btn-secondary {
-      color: $gray;
-      text-transform: inherit;
-      .material-icons {
-        margin-right: 0;
-      }
-    }
-  }
 }
 .block-category {
   //min-height: 13.75rem;
@@ -60,16 +50,14 @@
   }
 }
 .products-sort-order {
-  color: $gray;
+  //color: $gray;
   .select-title {
     display: inline-block;
     width: 100%;
-    color: $gray-darker;
-    background: white;
+    background: #FFF;
     padding: $small-space;
     cursor: pointer;
     border: $input-btn-border-width solid $input-border-color;
-    @include box-shadow-light;
   }
   .select-list {
     display: block;

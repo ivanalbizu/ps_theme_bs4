@@ -34,6 +34,9 @@ import SwiperFeaturedProducts from './components/featured-products-slider';
 //View mode grid/list products
 import ViewModeProducts from './components/view-mode-products';
 
+//scroll up
+import ScrollUp from './components/scroll-up';
+
 import './responsive';
 import './checkout';
 import './customer';
@@ -71,6 +74,7 @@ $(document).ready(() => {
   let productSelect  = new ProductSelect();
   const swiperFeaturedProducts = new SwiperFeaturedProducts();
   const viewModeProducts = new ViewModeProducts();
+  const scrollUp = new ScrollUp();
   dropDown.init();
   form.init();
   topMenu.init();
@@ -78,4 +82,5 @@ $(document).ready(() => {
   productSelect.init();
   swiperFeaturedProducts.init();
   viewModeProducts.init();
+  scrollUp.init();
 });

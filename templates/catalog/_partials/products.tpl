@@ -35,8 +35,8 @@
     {include file='_partials/pagination.tpl' pagination=$listing.pagination}
   {/block}
 
-  <div class="hidden-md-up text-xs-right up">
-    <a href="#header" class="btn btn-secondary">
+  <div class="hidden-md-up text-center mb-4">
+    <a href="#header" class="btn btn-secondary scroll-up">
       {l s='Back to top' d='Shop.Theme.Actions'}
       <i class="material-icons">&#xE316;</i>
     </a>

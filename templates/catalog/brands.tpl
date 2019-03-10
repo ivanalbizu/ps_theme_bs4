@@ -28,7 +28,7 @@
   <section id="main">
 
     {block name='brand_header'}
-      <h1>{l s='Brands' d='Shop.Theme.Catalog'}</h1>
+      <h1 class="title-page">{l s='Brands' d='Shop.Theme.Catalog'}</h1>
     {/block}
 
     {block name='brand_miniature'}

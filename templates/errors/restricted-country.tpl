@@ -32,7 +32,7 @@
       <header class="page-header">
         <div class="logo"><img src="{$shop.logo}" alt="logo"></div>
         {block name='page_header'}
-          <h1>{block name='page_title'}{$shop.name}{/block}</h1>
+          <h1 class="title-page">{block name='page_title'}{$shop.name}{/block}</h1>
         {/block}
       </header>
     {/block}

@@ -45,9 +45,11 @@
         </div>
 
         <div class="form-group row">
-          <label class="col-md-3 form-control-label">{l s='Subject' d='Shop.Forms.Labels'}</label>
-          <div class="col-md-6">
-            <select name="id_contact" class="form-control form-control-select">
+          <div class="col-md-12">
+            <label class="form-control-label" for="id_contact">
+              {l s='Subject' d='Shop.Forms.Labels'}
+            </label>
+            <select id="id_contact" name="id_contact" class="form-control form-control-select">
               {foreach from=$contact.contacts item=contact_elt}
                 <option value="{$contact_elt.id_contact}">{$contact_elt.name}</option>
               {/foreach}
@@ -56,10 +58,11 @@
         </div>
 
         <div class="form-group row">
-          <label class="col-md-3 form-control-label">{l s='Email address' d='Shop.Forms.Labels'}</label>
-          <div class="col-md-6">
+          <div class="col-md-12">
+            <label class="form-control-label" for="from">{l s='Email address' d='Shop.Forms.Labels'}</label>
             <input
               class="form-control"
+              id="from"
               name="from"
               type="email"
               value="{$contact.email}"
@@ -70,26 +73,28 @@
 
         {if $contact.orders}
           <div class="form-group row">
-            <label class="col-md-3 form-control-label">{l s='Order reference' d='Shop.Forms.Labels'}</label>
-            <div class="col-md-6">
-              <select name="id_order" class="form-control form-control-select">
+            <div class="col-md-12">
+              <label class="form-control-label" for="id_order">{l s='Order reference' d='Shop.Forms.Labels'}</label>
+              <select id="id_order" name="id_order" class="form-control form-control-select">
                 <option value="">{l s='Select reference' d='Shop.Forms.Help'}</option>
                 {foreach from=$contact.orders item=order}
                   <option value="{$order.id_order}">{$order.reference}</option>
                 {/foreach}
               </select>
             </div>
+            {*
             <span class="col-md-3 form-control-comment">
               {l s='optional' d='Shop.Forms.Help'}
             </span>
+            *}
           </div>
         {/if}
 
         {if $contact.allow_file_upload}
           <div class="form-group row">
-            <label class="col-md-3 form-control-label">{l s='Attachment' d='Shop.Forms.Labels'}</label>
-            <div class="col-md-6">
-              <input type="file" name="fileUpload" class="filestyle" data-buttonText="{l s='Choose file' d='Shop.Theme.Actions'}">
+            <div class="col-md-9">
+              <label class="form-control-label" for="fileUpload">{l s='Attachment' d='Shop.Forms.Labels'}</label>
+              <input type="file" id="fileUpload" name="fileUpload" class="filestyle" data-buttonText="{l s='Choose file' d='Shop.Theme.Actions'}">
             </div>
             <span class="col-md-3 form-control-comment">
               {l s='optional' d='Shop.Forms.Help'}
@@ -98,10 +103,11 @@
         {/if}
 
         <div class="form-group row">
-          <label class="col-md-3 form-control-label">{l s='Message' d='Shop.Forms.Labels'}</label>
-          <div class="col-md-9">
+          <div class="col-md-12">
+            <label class="form-control-label" for="message">{l s='Message' d='Shop.Forms.Labels'}</label>
             <textarea
               class="form-control"
+              id="message"
               name="message"
               placeholder="{l s='How can we help?' d='Shop.Forms.Help'}"
               rows="3"
@@ -111,7 +117,7 @@
 
       </section>
 
-      <footer class="form-footer text-sm-right">
+      <footer>
         <input class="btn btn-primary" type="submit" name="submitMessage" value="{l s='Send' d='Shop.Theme.Actions'}">
       </footer>
     {/if}
