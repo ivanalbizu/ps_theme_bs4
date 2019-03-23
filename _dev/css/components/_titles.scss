@@ -6,3 +6,9 @@
     color: $headings-color;
     margin-bottom: $headings-margin-bottom;
 }
+a {
+    color: $gray-darker;
+    &:hover {
+        color: $brand-primary;
+    }
+}

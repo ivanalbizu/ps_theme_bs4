@@ -37,25 +37,20 @@
 @import "components/featured-products-slider";
 //Material Icons vida DATA-ATTR
 @import "components/material-icons-data";
+@import "components/util";
 
-/*** HEADER ***/
+//TO-DO
+//Revisar archivos bootstrap que no serían necesario import
+// _type.scss
+// dar estilos a titulos
+
+// HEADER
 #header {
-  background: white;
-  color: $gray;
   .logo {
     max-width: 100%;
   }
-  a {
-    color: $gray-darker;
-    &:hover {
-      text-decoration: none;
-      color: $brand-primary;
-    }
-  }
   .header-nav {
     border-bottom: $gray-light 1px solid;
-    //max-height: 50px;
-    //margin-bottom: 30px;
     #menu-icon {
       vertical-align: middle;
       cursor: pointer;
@@ -70,13 +65,9 @@
       justify-content: flex-end;
     }
     .currency-selector {
-      margin-top: 0.9375rem;
-      margin-left: 0.9375rem;
       white-space: nowrap;
     }
     .user-info {
-      //margin-left: 2.5rem;
-      //margin-top: 0.9375rem;
       text-align: right;
       white-space: nowrap;
       .account {
@@ -84,7 +75,6 @@
       }
     }
     .language-selector {
-      //margin-top: 0.9375rem;
       white-space: nowrap;
     }
     .cart-preview {
@@ -120,9 +110,6 @@
           color: white;
         }
       }
-      //.header {
-      //  margin-top: 0.125rem;
-      //}
     }
     #contact-link {
       //margin-top: 0.9375rem;
@@ -138,7 +125,6 @@
     > .container {
       position: relative;
     }
-    //padding-bottom: 1.25rem;
     .menu {
       > ul {
         > li {
@@ -146,14 +132,9 @@
         }
       }
       padding-left: 15px;
-      //margin-bottom: 0.375rem;
     }
     .position-static {
       position: static;
-    }
-    a[data-depth="0"] {
-      color: $gray;
-      text-transform: uppercase;
     }
   }
   .top-menu-link {
@@ -164,18 +145,9 @@
 .popover {
   font-family: inherit;
 }
-/*** WRAPPER ***/
+// WRAPPER
 #wrapper {
-  background: $gray-light;
-  box-shadow: inset 0 2px 5px 0 rgba(0,0,0,0.11);
   padding-top: 1.563rem;
-  .banner {
-    margin-bottom: 1.5rem;
-    display: block;
-    img {
-      box-shadow: 1px 1px 7px 0 rgba(0, 0, 0, 0.15);
-    }
-  }
   .breadcrumb {
     background: transparent;
     padding: 0;
@@ -201,13 +173,10 @@
           content: "";
         }
       }
-      a {
-        color: $gray-darker;
-      }
     }
   }
 }
-/*** MAIN ***/
+// MAIN
 #main {
   @include media-breakpoint-down(sm) {
     margin-left: 1rem;
@@ -247,17 +216,9 @@
     margin-top: 1rem;
   }
   #header {
-    background: $gray-light;
     .header-nav {
-      background: white;
-      //margin-bottom: 0.625rem;
-      color: $gray-darker;
-      border-bottom: 0;
       .top-logo {
-        //line-height: 50px;
-        //vertical-align: middle;
         max-width: 200px;
-        //margin: 0 auto;
         a {
           img {
             max-height: 50px;
@@ -289,11 +250,7 @@
       }
     }
     .header-top {
-      background: $gray-light;
       padding-bottom: 0;
-      a[data-depth="0"] {
-        color: $gray-darker;
-      }
     }
   }
   section.checkout-step {
@@ -302,18 +259,6 @@
   .default-input {
     min-width: 100%;
   }
-  label {
-    clear: both;
-  }
-  /*
-  #products .product-miniature {
-    width: 29.33% //33.33-4%
-  }
-  #products .product-miniature,
-  .featured-products .product-miniature {
-    margin: 0 auto;
-  }
-  */
   .block-contact {
     padding-left: 0.9375rem;
     border: none;
@@ -373,4 +318,16 @@
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+}
+
+address, dl, ol, ul {
+  margin-bottom: 0;
+}
+//override user agent stylesheet
+//override ivan _reboot.scss
+ul, ol, menu, dir, figure {
+  margin-block-start: unset;
+  margin-block-end: unset;
+  padding-inline-start: unset;
+  padding-inline-end: unset;
 }

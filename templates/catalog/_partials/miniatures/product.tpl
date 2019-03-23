@@ -113,10 +113,9 @@
     <div class="card-product__body">
       {block name='product_name'}
         {* TO-DO
-          Revisar etiqueta h1.
-          En ningún caso sería h1, ya que esta aparecerá más de una vez
+          Revisar etiqueta h2.
         *}
-        <h1 class="h3 product-title" itemprop="name"><a href="{$product.url}">{$product.name|truncate:30:'...'}</a></h1>
+        <h2 class="h3 product-title" itemprop="name"><a href="{$product.url}">{$product.name|truncate:30:'...'}</a></h2>
       {/block}
 
       {block name='product_price_and_shipping'}

@@ -1,0 +1,84 @@
+.color-primary {
+    color: $brand-primary;
+}
+.color-gray-lighter {
+    color: $gray-lighter;
+}
+
+.bg-primary {
+    background-color: $brand-primary;
+}
+.bg-gray-lighter {
+    background-color: $gray-lighter;
+}
+
+.text-uppercase-first:first-letter {
+    text-transform: uppercase;
+}
+
+/* Customize the label (the container) */
+.container-input {
+    display: block;
+    position: relative;
+    padding-left: 1.25rem;
+    margin-bottom: .375rem;
+    text-align: left;
+    cursor: pointer;
+    font-size: .75rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0 !important;
+        width: 0;
+    }
+    .checkmark {
+        position: absolute;
+        top: .25rem;
+        left: 0;
+        height: .75rem;
+        width: .75rem;
+        background-color: #FFF;
+        border: 1px solid #000;
+        transition: background-color .1s ease-in-out;
+        &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            
+            //Opcional: Marca blanca cuando el check está marcado
+            left: 3px;
+            top: 0;
+            width: 4px;
+            height: 7px;
+            border: solid #FFF;
+            border-width: 0 1px 1px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    }
+    &:hover input ~ .checkmark {
+        background-color: rgba($brand-primary, .2);
+        transition: background-color .2s ease-in-out;
+    }
+    input:checked ~ .checkmark {
+        background-color: $brand-primary;
+    }
+    input:checked ~ .checkmark:after {
+        display: block;
+    }
+}
+
+.link-underline {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #000;
+    &:hover {
+        border-color: inherit;
+    }
+}

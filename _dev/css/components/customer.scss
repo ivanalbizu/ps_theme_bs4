@@ -1,4 +1,4 @@
-/*** SOME GENERIC STYLES ***/
+// SOME GENERIC STYLES
 @mixin customer-area-base-box {
   @include box-shadow;
   background: white;
@@ -7,7 +7,6 @@
 @mixin customer-area-box {
   @include customer-area-base-box;
   font-size: $font-size-sm;
-  color: $gray;
 }
 .table-labeled {
   th {

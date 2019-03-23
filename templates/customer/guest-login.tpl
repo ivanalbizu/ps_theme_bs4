@@ -37,11 +37,12 @@
     <section class="form-fields">
 
       <div class="form-group row">
-        <label class="col-md-3 form-control-label required">
-          {l s='Order Reference:' d='Shop.Forms.Labels'}
-        </label>
-        <div class="col-md-6">
+        <div class="col-md-9">
+          <label for="order_reference" class="form-control-label required">
+            {l s='Order Reference:' d='Shop.Forms.Labels'}
+          </label>
           <input
+            id="order_reference"
             class="form-control"
             name="order_reference"
             type="text"
@@ -55,11 +56,12 @@
       </div>
 
       <div class="form-group row">
-        <label class="col-md-3 form-control-label required">
-          {l s='Email:' d='Shop.Forms.Labels'}
-        </label>
-        <div class="col-md-6">
+        <div class="col-md-9">
+          <label for="email" class="form-control-label required">
+            {l s='Email:' d='Shop.Forms.Labels'}
+          </label>
           <input
+            id="email"
             class="form-control"
             name="email"
             type="email"

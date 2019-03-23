@@ -2,28 +2,6 @@
 	&[data-depth="1"] {
 		margin: 0.625rem;
 	}
-	a:not([data-depth="0"]) {
-		display: block;
-		padding: 0.625rem;
-		color: $gray;
-		font-weight: 400;
-	}
-	a.dropdown-submenu {
-		color: $gray-darker;
-		text-transform: uppercase;
-		font-weight: 600;
-	}
-	a[data-depth="0"] {
-		font-weight: 600;
-		//padding: 0.1875rem $small-space 0.375rem;
-		padding: 0.1875rem $small-space;
-		&:hover {
-			#header & {
-				color: $brand-primary;
-				text-decoration: none;
-			}
-		}
-	}
 	a[data-depth="1"],
 	a[data-depth="2"] {
 		padding: 0 0.625rem 0.625rem 0;
@@ -45,9 +23,6 @@
 		ul[data-depth="1"] > li {
 			float: left;
 			margin: 0 1.25rem;
-		}
-		a:hover {
-			color: $brand-primary;
 		}
 	}
 	.popover {
@@ -77,7 +52,6 @@
 		margin-bottom: 0.625rem;
 	}
 	.top-menu {
-		color: $gray-darker;
 		.collapse-icons[aria-expanded="true"] {
 			.add {
 				display: none;
@@ -127,11 +101,9 @@
 			ul[data-depth="1"] {
 				margin: 0;
 				> li {
+					//Valorar cambiar float por width: 100%
 					float: none;
 					margin: 0;
-					a {
-						text-transform: none;
-					}
 				}
 			}
 			ul {
@@ -140,7 +112,6 @@
 			li > a {
 				padding: 0.625rem;
 				border-bottom: 1px solid white;
-				font-weight: bold;
 			}
 			ul[data-depth="2"] li a {
 				padding-left: 1.25rem;

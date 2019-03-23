@@ -30,13 +30,19 @@
 
 {else}
 
-  <div class="form-group row {if !empty($field.errors)}has-error{/if}">
-    <label class="col-md-3 form-control-label{if $field.required} required{/if}">
+  <div class="form-group row{if !empty($field.errors)} has-error{/if}">
+    <div class="col-md-12{if ($field.type === 'radio-buttons')} form-control-valign{/if}">
+    
+      {*La construcción de campos CHECKBOX se hace en conjunto: para poder meter el INPUT dentro del label*}
       {if $field.type !== 'checkbox'}
-        {$field.label}
+
+      <label class="form-control-label{if $field.required} required{/if}" for="{$field.name}">
+        {if $field.type !== 'checkbox'}
+          {$field.label}{if $field.required} (required){/if}
+        {/if}
+      </label>
+
       {/if}
-    </label>
-    <div class="col-md-6{if ($field.type === 'radio-buttons')} form-control-valign{/if}">
 
       {if $field.type === 'select'}
 
@@ -87,11 +93,11 @@
       {elseif $field.type === 'checkbox'}
 
         {block name='form_field_item_checkbox'}
-          <span class="custom-checkbox">
+          <label class="container-input">
+            {$field.label nofilter}
             <input name="{$field.name}" type="checkbox" value="1" {if $field.value}checked="checked"{/if} {if $field.required}required{/if}>
-            <span><i class="material-icons checkbox-checked">&#xE5CA;</i></span>
-            <label>{$field.label nofilter}</label >
-          </span>
+            <span class="checkmark"></span>
+          </label>
         {/block}
 
       {elseif $field.type === 'date'}
@@ -161,6 +167,7 @@
             name="{$field.name}"
             type="{$field.type}"
             value="{$field.value}"
+            id="{$field.name}"
             {if isset($field.availableValues.placeholder)}placeholder="{$field.availableValues.placeholder}"{/if}
             {if $field.maxLength}maxlength="{$field.maxLength}"{/if}
             {if $field.required}required{/if}
@@ -179,14 +186,15 @@
       {/block}
 
     </div>
-
+    {*
     <div class="col-md-3 form-control-comment">
       {block name='form_field_comment'}
         {if (!$field.required && !in_array($field.type, ['radio-buttons', 'checkbox']))}
-         {l s='Optional' d='Shop.Forms.Labels'}
+          {l s='Optional' d='Shop.Forms.Labels'}
         {/if}
       {/block}
     </div>
+    *}
   </div>
 
 {/if}

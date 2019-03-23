@@ -24,36 +24,11 @@
   }
   margin-bottom: 0.625rem;
 }
-.block-contact {
-  //border-left: $gray-light 2px solid;
-  //padding-left: 3rem;
-  color: $gray;
-  /*
-  .block-contact-title {
-    color:$gray-darker;
-  }
-  */
-}
 .linklist {
   .blockcms-title a {
     color:$gray-darker;
   }
 }
-.account-list a {
-  color: $gray;
-  &:hover {
-    color: $brand-primary;
-  }
-}
-/*
-.blockcms-title,
-.myaccount-title,
-.myaccount-title a,
-.block-contact-title {
-  font-weight: 700;
-  font-size: $base-font-size;
-}
-*/
 .block-social {
   text-align: right;
 }
@@ -149,21 +124,8 @@
   background-image: url(../img/instagram.svg);
 }
 .footer-container {
-  //margin-top: $medium-space;
-  //padding-top: $medium-space;
   overflow: hidden;
   box-shadow: 2px 2px 11px 0px rgba(0, 0, 0, 0.3);
-  li {
-    margin-bottom: 0.3125rem;
-  }
-  li a {
-    color: $gray;
-    cursor: pointer;
-    font-size: $font-size-sm;
-    &:hover {
-      color: $brand-primary;
-    }
-  }
   .links {
     .collapse {
       display: inherit;
@@ -173,7 +135,6 @@
 
 @include media-breakpoint-down(sm) {
   .block_newsletter {
-    //padding-bottom: 0.625rem;
     border-bottom: 1px solid $gray-lighter;
   }
   .footer-container {
@@ -221,10 +182,6 @@
         > li {
           padding: 0.625rem;
           border-bottom: 1px solid white;
-          font-weight: bold;
-          a {
-            color: $gray-darker;
-          }
         }
       }
     }

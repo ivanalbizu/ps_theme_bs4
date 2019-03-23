@@ -49,17 +49,17 @@
     </header>
 
     <section class="form-fields">
-      <div class="form-group center-email-fields">
-        <label class="col-md-3 form-control-label required">{l s='Email address' d='Shop.Forms.Labels'}</label>
-        <div class="col-md-5 email">
+      <div class="form-group">
+        <div class="col-md-12 email">
+          <label for="email" class="form-control-label required">{l s='Email address' d='Shop.Forms.Labels'}</label>
           <input type="email" name="email" id="email" value="{if isset($smarty.post.email)}{$smarty.post.email|stripslashes}{/if}" class="form-control" required>
         </div>
-        <button class="form-control-submit btn btn-primary hidden-xs-down" name="submit" type="submit">
-          {l s='Send reset link' d='Shop.Theme.Actions'}
-        </button>
-        <button class="form-control-submit btn btn-primary hidden-sm-up" name="submit" type="submit">
-          {l s='Send' d='Shop.Theme.Actions'}
-        </button>
+        <div class="col-md-12">
+          <button class="form-control-submit btn btn-primary" name="submit" type="submit">
+            <span class="hidden-sm-down">{l s='Send reset link' d='Shop.Theme.Actions'}</span>
+            <span class="hidden-md-up">{l s='Send' d='Shop.Theme.Actions'}</span>
+          </button>
+        </div>
       </div>
     </section>
 

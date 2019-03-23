@@ -26,7 +26,7 @@
 
 {block name='product_list_header'}
     <div class="container block-category card card-block hidden-sm-down">
-      <h1 class="h1">{$category.name}</h1>
+      <h1 class="title-page">{$category.name}</h1>
       {if $category.description}
         <div id="category-description" class="text-muted">{$category.description nofilter}</div>
       {/if}
