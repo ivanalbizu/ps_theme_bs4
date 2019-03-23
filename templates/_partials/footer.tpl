@@ -43,9 +43,9 @@
     </div>
     <div class="row">
       <div class="col-md-12">
-        <p class="text-sm-center">
+        <p class="text-center">
           {block name='copyright_link'}
-            <a class="_blank" href="http://www.prestashop.com" target="_blank">
+            <a class="_blank" href="#!">
               {l s='%copyright% %year% - Ecommerce software by %prestashop%' sprintf=['%prestashop%' => 'PrestaShop™', '%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'}
             </a>
           {/block}

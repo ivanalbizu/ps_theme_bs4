@@ -22,13 +22,13 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<div class="col-sm-2 mb-3 mb-sm-0">
+<div class="">
   <button class="btn js-view-product-mode">
     <i class="material-icons">view_list</i>
   </button>
 </div>
-<div class="col-sm-4 col-md-3 hidden-sm-down sort-by">{l s='Sort by:' d='Shop.Theme.Global'}</div>
-<div class="{if !empty($listing.rendered_facets)}col-sm-6{else}col-sm-12{/if} col-md-7 mb-3 mb-sm-0 products-sort-order dropdown">
+<div class="hidden-sm-down sort-by">{l s='Sort by:' d='Shop.Theme.Global'}</div>
+<div class="{if !empty($listing.rendered_facets)}TO-DO{else}TODO - else{/if} products-sort-order dropdown">
   <button
     class="btn-unstyle select-title"
     rel="nofollow"

@@ -79,8 +79,8 @@
   {if $conditions_to_approve|count}
     <p class="ps-hidden-by-js">
       {* At the moment, we're not showing the checkboxes when JS is disabled
-         because it makes ensuring they were checked very tricky and overcomplicates
-         the template. Might change later.
+        because it makes ensuring they were checked very tricky and overcomplicates
+        the template. Might change later.
       *}
       {l s='By confirming the order, you certify that you have read and agree with all of the conditions below:' d='Shop.Theme.Checkout'}
     </p>
@@ -89,23 +89,17 @@
       <ul>
         {foreach from=$conditions_to_approve item="condition" key="condition_name"}
           <li>
-            <div class="float-xs-left">
-              <span class="custom-checkbox">
-                <input  id    = "conditions_to_approve[{$condition_name}]"
-                        name  = "conditions_to_approve[{$condition_name}]"
-                        required
-                        type  = "checkbox"
-                        value = "1"
-                        class = "ps-shown-by-js"
-                >
-                <span><i class="material-icons checkbox-checked">&#xE5CA;</i></span>
-              </span>
-            </div>
-            <div class="condition-label">
-              <label class="js-terms" for="conditions_to_approve[{$condition_name}]">
-                {$condition nofilter}
-              </label>
-            </div>
+            <label class="container-input js-term" for="conditions_to_approve[{$condition_name}]">
+              {$condition nofilter}
+              <input  id    = "conditions_to_approve[{$condition_name}]"
+                      name  = "conditions_to_approve[{$condition_name}]"
+                      required
+                      type  = "checkbox"
+                      value = "1"
+                      class = "ps-shown-by-js"
+              >
+              <span class="checkmark"></span>
+            </label>
           </li>
         {/foreach}
       </ul>

@@ -34,7 +34,7 @@
         <p>{$cart.summary_string}</p>
 
         <p>
-          <a href="#" data-toggle="collapse" data-target="#cart-summary-product-list">
+          <a href="#" class="text-underline" data-toggle="collapse" data-target="#cart-summary-product-list">
             {l s='show details' d='Shop.Theme.Actions'}
           </a>
         </p>

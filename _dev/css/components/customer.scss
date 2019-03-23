@@ -115,11 +115,12 @@
       }
     }
     .address-footer {
-      border-top: 1px solid $gray;
+      display: flex;
+      justify-content: space-around;
+      border-top: 1px solid $gray-lighter;
       padding: 0.5rem 1rem;
       a {
         color: $gray;
-        margin-right: 0.5rem;
         &:hover {
           color: $gray-darker;
         }

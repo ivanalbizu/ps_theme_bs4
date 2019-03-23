@@ -43,7 +43,6 @@
           <div class="address">{$address.formatted nofilter}</div>
         </label>
       </header>
-      <hr>
       <footer class="address-footer">
         {if $interactive}
           <a

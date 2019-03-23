@@ -25,7 +25,7 @@
 
 {*version orginal, sin swiper*}
 <section class="featured-products">
-  <h1 class="h1 products-section-title text-uppercase">
+  <h1 class="products-section-title">
     {l s='Popular Products' d='Shop.Theme.Catalog'}
   </h1>
   <div class="products">
@@ -33,14 +33,16 @@
       {include file="catalog/_partials/miniatures/product.tpl" product=$product}
     {/foreach}
   </div>
-  <a class="all-product-link h4" href="{$allProductsLink}">
-    {l s='All products' d='Shop.Theme.Catalog'}<i class="material-icons">&#xE315;</i>
-  </a>
+  <div>
+    <a class="all-product-link" href="{$allProductsLink}">
+      {l s='All products' d='Shop.Theme.Catalog'}<i class="material-icons">&#xE315;</i>
+    </a>
+  </div>
 </section>
 
 {*version con swiper. necesita adaptación*}
 <section class="featured-products">
-  <h1 class="h1 products-section-title text-uppercase">{l s='Popular Products' d='Shop.Theme.Catalog'}</h1>
+  <h1 class="products-section-title">{l s='Popular Products' d='Shop.Theme.Catalog'}</h1>
   <div class="products swiper-container">
     <div class="swiper-wrapper">
       {foreach from=$products item="product"}

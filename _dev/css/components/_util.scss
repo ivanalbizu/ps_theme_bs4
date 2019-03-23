@@ -11,7 +11,9 @@
 .bg-gray-lighter {
     background-color: $gray-lighter;
 }
-
+.text-underline {
+    text-decoration: underline;
+}
 .text-uppercase-first:first-letter {
     text-transform: uppercase;
 }

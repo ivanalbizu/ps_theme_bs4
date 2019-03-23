@@ -18,13 +18,6 @@
   .product-thumbnail {
     display: block;
   }
-  .product-title a {
-    color: $gray;
-    font-size: $font-size-sm;
-    text-decoration: none;
-    text-align: center;
-    font-weight: 400;
-  }
   .thumbnail-container {
     position: relative;
     margin-bottom: 1.563rem;
@@ -33,7 +26,8 @@
     width: auto;
     background: white;
     @include box-shadow;
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       .highlighted-informations {
         bottom: 5.5rem;
         &::after {
@@ -53,29 +47,6 @@
         opacity: .25;
       }
     }
-  }
-  .products-section-title {
-    text-align: center;
-    margin-bottom: 1.5rem;
-  }
-  .product-title {
-    text-align: center;
-    text-transform: capitalize;
-    margin-top: 1rem;
-  }
-  .product-price-and-shipping {
-    color: $gray-darker;
-    font-weight: 700;
-    text-align: center;
-  }
-  .variant-links {
-    //position: relative;
-    text-align: center;
-    //width: 100%;
-    //top: -0.25em;
-    //padding-top: 0.1875rem;
-    //min-height: 2.5rem;
-    //background: white;
   }
   .highlighted-informations {
     position: absolute;
@@ -127,13 +98,6 @@
     font-weight: 700;
     position: relative;
     bottom: 0.5rem;
-  }
-  .all-product-link {
-    clear: both;
-    color: $gray;
-    font-weight: 700;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
   }
 }
 

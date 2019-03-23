@@ -44,6 +44,10 @@
 // _type.scss
 // dar estilos a titulos
 
+img {
+  max-width: 100%;
+}
+
 // HEADER
 #header {
   .logo {
@@ -205,7 +209,7 @@
   }
 }
 
-/*** Responsive part ***/
+// Responsive part
 @include media-breakpoint-down(sm) {
   #wrapper {
     box-shadow: none;

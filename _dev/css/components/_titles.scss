@@ -1,3 +1,4 @@
+// FOOTER
 .footer-title {
     font-size: $h3-font-size;
     font-family: $headings-font-family;
@@ -6,6 +7,37 @@
     color: $headings-color;
     margin-bottom: $headings-margin-bottom;
 }
+// PRODUCTOS
+.products-section-title {//Se usa en Bestseller / feature / new product / specials
+    text-transform: uppercase;
+}
+.products-section-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.product-title {
+    text-align: center;
+    margin-top: 1rem;
+    a {
+        color: $gray;
+        font-size: $font-size-sm;
+        text-decoration: none;
+        text-align: center;
+        font-weight: 400;
+    }
+}
+.product-price-and-shipping {
+    color: $gray-darker;
+    font-weight: 700;
+    text-align: center;
+}
+.variant-links {
+    text-align: center;
+}
+.all-product-link {
+    
+}
+
 a {
     color: $gray-darker;
     &:hover {
