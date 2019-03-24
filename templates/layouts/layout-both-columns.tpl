@@ -33,6 +33,8 @@
 
   <body id="{$page.page_name}" class="{$page.body_classes|classnames}">
 
+    <a href="#wrapper" class="sr-only sr-only-focusable scroll-main-content">{l s='Skip to main content' d='Shop.Theme.Global'}</a>
+
     {block name='hook_after_body_opening_tag'}
       {hook h='displayAfterBodyOpeningTag'}
     {/block}

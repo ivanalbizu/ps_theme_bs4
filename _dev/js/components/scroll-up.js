@@ -6,12 +6,14 @@ export default class ScrollUp {
     }
 
     scrollUp() {
-        $('.scroll-up').on('click', function (event) {
+        $('.scroll-up, .scroll-main-content').on('click', function (event) {
             event.preventDefault();
             var sectionTo = $(this).attr('href');
             $('html, body').animate({
                 scrollTop: $(sectionTo).offset().top
-            }, 1000);
+            }, 1000, function() {
+                $(sectionTo).attr("tabindex", '-1').focus();
+            });
         });
     }
 }
