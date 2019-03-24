@@ -45,9 +45,8 @@ export default class TopMenu extends DropDown {
         });
       }
     });
-    $('#menu-icon').on('click', function() {
-      $('#mobile_top_menu_wrapper').toggle();
-      self.toggleMobileMenu();
+    $('.overlay-bg, .menu-ham-toggle').on('click', function() {
+      $('body').toggleClass('menu-open');
     });
     $('.js-top-menu').mouseleave(() => {
       if (this.el.parent().hasClass('mobile')) {
@@ -69,14 +68,16 @@ export default class TopMenu extends DropDown {
   }
 
   toggleMobileMenu() {
-      if ($('#mobile_top_menu_wrapper').is(":visible")) {
-        $('#notifications').hide();
-        $('#wrapper').hide();
-        $('#footer').hide();
-      } else {
-        $('#notifications').show();
-        $('#wrapper').show();
-        $('#footer').show();
-      }
+    if ($('body').hasClass("menu-open")) {
+      $('#notifications').fadeOut(400);
+      //$('#wrapper').fadeOut(400);
+      //$('#footer').fadeOut(400);
+      //$('body').removeClass("menu-open");
+    } else {
+      $('#notifications').fadeIn(300);
+      //$('#wrapper').fadeIn(300);
+      //$('#footer').fadeIn(300);
+      //$('body').addClass("menu-open");      
+    }
   }
 }

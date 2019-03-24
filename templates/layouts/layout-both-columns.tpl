@@ -114,6 +114,8 @@
       {include file="_partials/javascript.tpl" javascript=$javascript.bottom}
     {/block}
 
+    <div class="overlay-bg"></div>
+
     {block name='hook_before_body_closing_tag'}
       {hook h='displayBeforeBodyClosingTag'}
     {/block}

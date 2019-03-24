@@ -1,0 +1,65 @@
+//INICIO ADAPTACIÓN MENU RESPONSIVE
+#mobile_top_menu_wrapper {
+    position: fixed;
+    display: block;
+    overflow-y: auto;
+    top: 0;
+    bottom: 0;
+    width: 294px;
+    transform: translate3d(-100%, 0, 0);
+    transition: transform .4s ease-in-out;
+    box-shadow: 1px 1px 15px rgba(0,0,0,.5);
+    z-index: 7;
+}
+.overlay-bg {
+    background-color: transparent;
+    transition: background-color .3s ease-in-out;
+}
+.menu-open {
+    position: fixed;
+    max-width: 100%;
+    #mobile_top_menu_wrapper {
+        transform: translate3d(0, 0, 0);
+        transition: transform .3s ease-in-out;
+    }
+    .overlay-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.9);
+        z-index: 5;
+        transition: background-color .2s ease-in-out;
+    }
+}
+//FIN ADAPTACIÓN MENU RESPONSIVE
+
+
+//INICIO SELECTS MONEDA / IDIOMA. CONTACTO
+//NO SE ESPECIFICA MEDIAQUERIE POR ESTAR DENTRO DE: #mobile_top_menu_wrapper
+#mobile_top_menu_wrapper {
+    .js-top-menu-bottom {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #_mobile_currency_selector,
+    #_mobile_language_selector {
+        width: 49%;
+        > div {
+            padding: 0;
+        }
+        select {
+            width: 100%;
+            margin: 1rem 0;
+            padding: .4rem;
+        }
+    }
+    #_mobile_contact_link {
+        a {
+            color: #323233;
+        }
+    }
+}
+//FIN SELECTS MONEDA / IDIOMA. CONTACTO

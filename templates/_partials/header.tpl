@@ -42,8 +42,18 @@
         </div>
         {*Versión Tablet y Mobile*}
         <div class="row hidden-md-up text-sm-center mobile align-items-baseline justify-content-between">
-          <div class="" id="menu-icon">
-            <i class="material-icons d-inline">&#xE5D2;</i>
+          <div>
+            <svg class="ham hamRotate ham4 menu-ham-toggle" viewBox="0 0 100 100" width="60">
+              <path
+                    class="line top"
+                    d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+              <path
+                    class="line middle"
+                    d="m 70,50 h -40" />
+              <path
+                    class="line bottom"
+                    d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+            </svg>
           </div>
           <div class="top-logo" id="_mobile_logo"></div>
           <div class="d-flex align-items-center">
@@ -75,7 +85,21 @@
           </div>
         </div>
       </div>
-      <div id="mobile_top_menu_wrapper" class="row hidden-md-up" style="display:none;">
+      <div id="mobile_top_menu_wrapper" class="row hidden-md-up">
+        <svg class="ham hamRotate ham4 menu-ham-toggle" viewBox="0 0 100 100" width="60">
+          <path
+                class="line top"
+                d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+          <path
+                class="line middle"
+                d="m 70,50 h -40" />
+          <path
+                class="line bottom"
+                d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+        </svg>
+        <a href="{$urls.base_url}">
+          <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
+        </a>
         <div class="js-top-menu mobile" id="_mobile_top_menu"></div>
         <div class="js-top-menu-bottom">
           <div id="_mobile_currency_selector"></div>
