@@ -2,11 +2,11 @@ import $ from 'jquery';
 
 export default class ScrollUp {
     init(){
-        this.scrollUp();
+        this.scrollTo();
     }
 
-    scrollUp() {
-        $('.scroll-up, .scroll-main-content').on('click', function (event) {
+    scrollTo() {
+        $('.scroll-up').on('click', function (event) {
             event.preventDefault();
             var sectionTo = $(this).attr('href');
             $('html, body').animate({
