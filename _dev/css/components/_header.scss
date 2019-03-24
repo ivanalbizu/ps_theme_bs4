@@ -6,9 +6,9 @@
     top: 0;
     bottom: 0;
     width: 294px;
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(calc(-100% - 15px), 0, 0);//Desplaza el ancho de la sombra 
     transition: transform .4s ease-in-out;
-    box-shadow: 1px 1px 15px rgba(0,0,0,.5);
+    box-shadow: 0 0 15px rgba(0,0,0,.5);
     z-index: 7;
 }
 .overlay-bg {

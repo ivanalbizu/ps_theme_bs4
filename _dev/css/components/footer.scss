@@ -1,9 +1,6 @@
 .block_newsletter {
   @include search-box;
   font-size: $font-size-sm;
-  p {
-    //padding-top: $small-space;
-  }
   form {
     .input-wrapper {
       overflow: hidden;
@@ -29,100 +26,35 @@
     color:$gray-darker;
   }
 }
+.social-icon {
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  &:hover {
+    fill: $brand-secondary;
+  }
+}
 .block-social {
   text-align: right;
 }
 .block-social li {
-  height: 2.5rem;
-  width: 2.5rem;
   background-color: $gray-light;
-  background-repeat: no-repeat;
   display: inline-block;
   margin: 0.125rem;
-  cursor: pointer;
   &:hover {
     background-color: $brand-primary;
   }
   a {
     display: block;
-    height: 100%;
-    white-space: nowrap;
-    text-indent: 100%;
-    overflow: hidden;
-    &:hover {
-      color: transparent;
-    }
   }
 }
-.facebook {
-  background-image: url(../img/facebook.svg);
-  &::before{
-    content:"";
-    background-image: url(../img/facebook-blue.svg);
-  }
-  &.icon-gray {
-    background-image: url(../img/facebook-gray.svg);
-    &:hover {
-      background-image: url(../img/facebook-blue.svg);
-    }
-  }
-}
-.twitter {
-  background-image: url(../img/twitter.svg);
-  &::before{
-    content:"";
-    background-image: url(../img/twitter-blue.svg);
-  }
-  &.icon-gray {
-    background-image: url(../img/twitter-gray.svg);
-    &:hover {
-      background-image: url(../img/twitter-blue.svg);
-    }
-  }
-}
-.rss {
-  background-image: url(../img/rss.svg);
-}
-.youtube {
-  background-image: url(../img/youtube.svg);
-}
-.googleplus {
-  background-image: url(../img/gplus.svg);
-  &::before{
-    content:"";
-    background-image: url(../img/gplus-blue.svg);
-  }
-  &.icon-gray {
-    background-image: url(../img/gplus-gray.svg);
-    &:hover {
-      background-image: url(../img/gplus-blue.svg);
-    }
-  }
-}
+
 #block_myaccount_infos{
   .myaccount-title a{
     color:$gray-darker;
   }
 }
-.pinterest {
-  background-image: url(../img/pinterest.svg);
-  &::before{
-    content:"";
-    background-image: url(../img/pinterest-blue.svg);
-  }
-  &.icon-gray {
-    background-image: url(../img/pinterest-gray.svg);
-    &:hover {
-      background-image: url(../img/pinterest-blue.svg);
-    }
-  }
-}
-.vimeo {
-  background-image: url(../img/vimeo.svg);
-}
-.instagram {
-  background-image: url(../img/instagram.svg);
-}
+
 .footer-container {
   overflow: hidden;
   box-shadow: 2px 2px 11px 0px rgba(0, 0, 0, 0.3);

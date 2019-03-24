@@ -176,7 +176,7 @@ img {
 }
 // MAIN
 #main {
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(xs) {
     margin-left: 1rem;
     margin-right: 1rem;
   }
