@@ -1,7 +1,7 @@
 # Prestashop Bootstrap 4 Theme
 
 ## Add Bootstrap 4
-Replace Bootstrap 4.0.0-alpha.5 to 4.1.1.
+Replace Bootstrap 4.0.0-alpha.5 to 4.3.1.
 
 Raplace classes on files. Not finish.
 
