@@ -90,8 +90,6 @@ Maquetar flechas y alturas de cajas de Swiper de productos actualmente en Home
 
 Darle una vuelta al menú, tanto Escritorio como Responsive
 
-Revisar dependencias de paquetes en Webpack para eliminar mensaje de Vulnerabilidad del repo
-
 Revisar para SourceMaps SASS para que muestre en el DEV del navegador el fichero SCSS origen. Actualmente algunas llamadas de ficheros externos desde themes.scss hace siempre referencia a este fichero
 
 
