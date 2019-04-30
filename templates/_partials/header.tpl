@@ -36,12 +36,12 @@
           <div class="col-md-4 col-xs-12">
             {hook h='displayNav1'}
           </div>
-          <div class="col-md-8 align-items-baseline right-nav">
+          <div class="col-md-8 align-items-center right-nav">
               {hook h='displayNav2'}
           </div>
         </div>
         {*Versión Tablet y Mobile*}
-        <div class="row hidden-md-up text-sm-center mobile align-items-baseline justify-content-between">
+        <div class="row hidden-md-up text-sm-center mobile align-items-center justify-content-between">
           <div>
             <svg class="ham hamRotate ham4 menu-ham-toggle" viewBox="0 0 100 100" width="60">
               <path
@@ -74,9 +74,9 @@
             <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
           </a>
         </div>
-        <div class="col-md-10 col-sm-12 position-static">
+        <div class="col-md-10 col-sm-12">
           <div class="row align-items-center">
-            <div class="menu col-lg-8 col-md-7 js-top-menu position-static hidden-sm-down" id="_desktop_top_menu">
+            <div class="menu col-lg-8 col-md-7 js-top-menu hidden-sm-down" id="_desktop_top_menu">
               {hook h='displayTopMainMenu'}
             </div>
             <div class="col-lg-4 col-md-5 col-sm-12 search-widget">

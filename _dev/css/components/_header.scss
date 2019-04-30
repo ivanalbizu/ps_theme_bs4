@@ -1,37 +1,152 @@
+// HEADER quitado de themes.scss
+#header {
+	.header-nav {
+		border-bottom: $gray-light 1px solid;
+		.right-nav {
+			display: flex;
+			flex-wrap: nowrap;
+			justify-content: flex-end;
+		}
+		.currency-selector {
+			white-space: nowrap;
+		}
+		.user-info {
+			text-align: right;
+			white-space: nowrap;
+			.account {
+				margin-left: $small-space;
+			}
+		}
+		.language-selector {
+			white-space: nowrap;
+		}
+		.cart-preview {
+			&.active {
+				background: $brand-primary;
+				a, i {
+					color: white;
+				}
+			}
+			.shopping-cart {
+				vertical-align: middle;
+				color: $gray;
+			}
+			.body {
+				display: none;
+			}
+		}
+		.blockcart {
+			margin-left: 0.9375rem;
+			text-align: center;
+			white-space: nowrap;
+			a {
+				color: $gray;
+				&:hover {
+					color: $brand-primary;
+				}
+			}
+			&.active {
+				a:hover {
+					color: white;
+				}
+			}
+		}
+		.material-icons {
+			line-height: inherit;
+		}
+	}
+	.header-top {
+		> .container {
+			position: relative;
+		}
+		.menu {
+			padding-left: 15px;
+			> ul {
+				> li {
+					float: left;
+				}
+			}
+		}
+	}
+	.top-menu-link {
+		margin-left: $medium-space;
+	}
+	@include media-breakpoint-down(sm) {
+		#header {
+			.header-nav {
+				.top-logo {
+					max-width: 200px;
+					a {
+						img {
+							max-height: 50px;
+							max-width: 100%;
+						}
+					}
+				}
+				.right-nav {
+					flex-direction: column;
+				}
+				.user-info {
+					text-align: left;
+					//margin-left: 0;
+					.logged {
+						color: $brand-primary;
+					}
+				}
+				.blockcart {
+					margin-left: 0;
+					background: inherit;
+					&.active {
+						margin-left: 0.5rem;
+					}
+					&.inactive {
+						.cart-products-count {
+							display: none;
+						}
+					}
+				}
+			}
+			.header-top {
+				padding-bottom: 0;
+			}
+		}
+	}
+}
+
 //INICIO ADAPTACIÓN MENU RESPONSIVE
 #mobile_top_menu_wrapper {
-    position: fixed;
-    display: block;
-    overflow-y: auto;
-    top: 0;
-    bottom: 0;
-    width: 294px;
-    transform: translate3d(calc(-100% - 15px), 0, 0);//Desplaza el ancho de la sombra 
-    transition: transform .4s ease-in-out;
-    box-shadow: 0 0 15px rgba(0,0,0,.5);
-    z-index: 7;
+	position: fixed;
+	display: block;
+	overflow-y: auto;
+	top: 0;
+	bottom: 0;
+	width: 294px;
+	transform: translate3d(calc(-100% - 15px), 0, 0);//Desplaza el ancho de la sombra 
+	transition: transform .4s ease-in-out;
+	box-shadow: 0 0 15px rgba(0,0,0,.5);
+	z-index: 7;
 }
 .overlay-bg {
-    background-color: transparent;
-    transition: background-color .3s ease-in-out;
+	background-color: transparent;
+	transition: background-color .3s ease-in-out;
 }
 .menu-open {
-    position: fixed;
-    max-width: 100%;
-    #mobile_top_menu_wrapper {
-        transform: translate3d(0, 0, 0);
-        transition: transform .3s ease-in-out;
-    }
-    .overlay-bg {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        background-color: rgba(255, 255, 255, 0.9);
-        z-index: 5;
-        transition: background-color .2s ease-in-out;
-    }
+	position: fixed;
+	max-width: 100%;
+	#mobile_top_menu_wrapper {
+		transform: translate3d(0, 0, 0);
+		transition: transform .3s ease-in-out;
+	}
+	.overlay-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background-color: rgba(255, 255, 255, 0.9);
+		z-index: 5;
+		transition: background-color .2s ease-in-out;
+	}
 }
 //FIN ADAPTACIÓN MENU RESPONSIVE
 
@@ -39,27 +154,27 @@
 //INICIO SELECTS MONEDA / IDIOMA. CONTACTO
 //NO SE ESPECIFICA MEDIAQUERIE POR ESTAR DENTRO DE: #mobile_top_menu_wrapper
 #mobile_top_menu_wrapper {
-    .js-top-menu-bottom {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    #_mobile_currency_selector,
-    #_mobile_language_selector {
-        width: 49%;
-        > div {
-            padding: 0;
-        }
-        select {
-            width: 100%;
-            margin: 1rem 0;
-            padding: .4rem;
-        }
-    }
-    #_mobile_contact_link {
-        a {
-            color: #323233;
-        }
-    }
+	.js-top-menu-bottom {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	#_mobile_currency_selector,
+	#_mobile_language_selector {
+		width: 49%;
+		> div {
+			padding: 0;
+		}
+		select {
+			width: 100%;
+			margin: 1rem 0;
+			padding: .4rem;
+		}
+	}
+	#_mobile_contact_link {
+		a {
+			color: #323233;
+		}
+	}
 }
 //FIN SELECTS MONEDA / IDIOMA. CONTACTO
