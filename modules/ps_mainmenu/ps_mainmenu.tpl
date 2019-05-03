@@ -23,7 +23,8 @@
 						</span>
 						{/if}
 					{if $node.children|count}
-					<div {if $depth === 0} class="popover sub-menu js-sub-menu collapse"{else} class="collapse"{/if} id="top_sub_menu_{$_expand_id}">
+					{*Si se quiere submenu con dirección COLUMNAS, quitar clase: sub-menu--fila*}
+					<div {if $depth === 0} class="popover sub-menu sub-menu--fila js-sub-menu collapse"{else} class="collapse"{/if} id="top_sub_menu_{$_expand_id}">
 						{menu nodes=$node.children depth=$node.depth parent=$node}
 					</div>
 					{/if}

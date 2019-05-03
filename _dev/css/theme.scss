@@ -176,8 +176,8 @@ img {
 
 @include media-breakpoint-down(xs) {
   #left-column, #content-wrapper {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

@@ -57,7 +57,6 @@
 
 .footer-container {
   overflow: hidden;
-  box-shadow: 2px 2px 11px 0px rgba(0, 0, 0, 0.3);
   .links {
     .collapse {
       display: inherit;
@@ -77,10 +76,6 @@
       padding-right: 0 !important;
     }
     .links {
-      .h3 {
-        line-height: 1.5;
-        font-size: 1rem;
-      }
       .title {
         padding: 0.625rem;
         border-bottom: 1px solid $gray-lighter;

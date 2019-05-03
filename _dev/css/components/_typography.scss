@@ -16,13 +16,15 @@
     margin-bottom: 1.5rem;
 }
 .product-title {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
     text-align: center;
     a {
-        color: $gray;
-        font-size: $font-size-sm;
-        text-decoration: none;
-        text-align: center;
+        font-size: 1rem;
         font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
     }
 }
 .product-price-and-shipping {
@@ -33,13 +35,16 @@
 .variant-links {
     text-align: center;
 }
-.all-product-link {
-    
-}
 
 a {
     color: $gray-darker;
     &:hover {
         color: $brand-primary;
     }
+}
+.all-product-link {
+    
+}
+.title-page {
+    
 }

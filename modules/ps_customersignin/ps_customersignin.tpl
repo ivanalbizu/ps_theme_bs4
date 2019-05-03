@@ -22,26 +22,39 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<div id="_desktop_user_info">
-  <div class="user-info">
+<div id="_desktop_user_info" class="">
+  <div class="">
     {if $logged}
-      <a
-        class="logout hidden-sm-down"
-        href="{$logout_url}"
-        rel="nofollow"
-      >
+      <button 
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+        aria-label="{l s='User dropdown' d='Shop.Theme.Global'}"
+        class="btn btn-unstyle"
+        >
         <i class="material-icons">&#xE7FF;</i>
-        {l s='Sign out' d='Shop.Theme.Actions'}
-      </a>
-      <a
-        class="account"
-        href="{$my_account_url}"
-        title="{l s='View my customer account' d='Shop.Theme.Customeraccount'}"
-        rel="nofollow"
-      >
-        <i class="material-icons hidden-md-up logged">&#xE7FF;</i>
         <span class="hidden-sm-down">{$customerName}</span>
-      </a>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="user-select">
+        <li>
+          <a
+            class="dropdown-item"
+            href="{$my_account_url}"
+            rel="nofollow"
+          >
+            {l s='View my customer account' d='Shop.Theme.Customeraccount'}
+          </a>
+        </li>
+        <li>
+          <a
+            class="logout dropdown-item"
+            href="{$logout_url}"
+            rel="nofollow"
+          >
+            {l s='Sign out' d='Shop.Theme.Actions'}
+          </a>
+        </li>
+      </ul>
     {else}
       <a
         href="{$my_account_url}"

@@ -47,6 +47,16 @@
 .card-product {
     margin: 1rem 1em;
     background-color: #d2d2d2;
+    &__img {
+        text-align: center;
+        a {
+            display: inline-block;
+            height: 100%;
+        }
+        img {
+            display: inline-block;
+        }
+    }
     &__body {
         padding: 1rem 1em;
     }
@@ -60,7 +70,7 @@
     & > .row {
         flex-direction: column;
     }
-    //@include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(sm) {
         .products>.card-product,
         .products>.card-product {
             width: 100%;
@@ -78,30 +88,9 @@
         .card-product__img {
             width: 20%;
         }
-    //}
+    }
 }
 
 .card-product{
     background-color: #eee;
-}
-
-@keyframes placeHolderShimmer{
-    0%{
-        background-position: -468px 0
-    }
-    100%{
-        background-position: 468px 0
-    }
-}
-
-.card-product__img {
-    animation-duration: 2.25s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-name: placeHolderShimmer;
-    animation-timing-function: linear;
-    background: darkgray;
-    background: linear-gradient(to right, #eeeeee 10%, #dddddd 18%, #eeeeee 33%);
-    background-size: 800px 104px;
-    min-height: 200px;
 }

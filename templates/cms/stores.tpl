@@ -33,7 +33,7 @@
 
     {foreach $stores as $store}
       <article id="store-{$store.id}" class="store-item card">
-        <div class="store-item-container clearfix">
+        <div class="store-item-container">
           <div class="col-md-3 store-picture hidden-sm-down">
             <img src="{$store.image.bySize.stores_default.url}" alt="{$store.image.legend}" title="{$store.image.legend}">
           </div>

@@ -38,7 +38,7 @@
 
       <div class="product-description">
         {block name='product_name'}
-          <h1 class="h3 product-title" itemprop="name"><a href="{$product.url}">{$product.name|truncate:30:'...'}</a></h1>
+          <h1 class="product-title" itemprop="name"><a href="{$product.url}">{$product.name|truncate:30:'...'}</a></h1>
         {/block}
 
         {block name='product_price_and_shipping'}
@@ -115,7 +115,7 @@
         {* TO-DO
           Revisar etiqueta h2.
         *}
-        <h2 class="h3 product-title" itemprop="name"><a href="{$product.url}">{$product.name|truncate:30:'...'}</a></h2>
+        <h2 class="product-title" itemprop="name"><a href="{$product.url}">{$product.name|truncate:30:'...'}</a></h2>
       {/block}
 
       {block name='product_price_and_shipping'}

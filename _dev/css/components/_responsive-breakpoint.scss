@@ -1,0 +1,10 @@
+@media(max-width: $breakpoint-menu-responsive) {
+    .breakpoint-menu-responsive-hidden-down {
+        display: none;
+    }
+}
+@media(min-width: $breakpoint-menu-responsive) {
+    .breakpoint-menu-responsive-hidden-up {
+        display: none;
+    }
+}

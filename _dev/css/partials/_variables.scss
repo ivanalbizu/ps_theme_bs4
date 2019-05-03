@@ -54,3 +54,11 @@ $display4-weight: 400;
 $text-muted: $gray;
 $NotoSansPath: "~notosans-fontface/fonts";
 $NotoSansVersion: "1.0.1";
+
+
+//TO-DO: Ajuste
+//Ajustar el valor en el que se produce transición entre menú Desktop a Responsive
+//Cuando se tenga Maquetado (tipografías, Textos reales...) según diseño Diseño
+//Se pregunta/comenta a Diseño a que Viewport se debe realizar ruptura
+//Actualizar también el valor JS: prestashop.responsive.min_width = 768; del fichero: _dev/js/responsive.js
+$breakpoint-menu-responsive: 768px;
