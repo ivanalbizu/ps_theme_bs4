@@ -27,8 +27,7 @@ import 'bootstrap/dist/js/bootstrap.min';
 import 'flexibility';
 import 'bootstrap-touchspin';
 
-//swiper plugin
-import 'swiper/dist/js/swiper.min';
+//swiper Featured Products
 import SwiperFeaturedProducts from './components/featured-products-slider';
 
 //View mode grid/list products

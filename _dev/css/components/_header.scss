@@ -101,24 +101,7 @@ $mobile-inner-y-padding: .625rem;
 	margin-left: $medium-space;
 }
 
-
-
-
-
 #mobile_top_menu_wrapper {
-	.responsive-menu-item {
-		position: relative;
-		&-caret {
-			position: absolute;
-			right: 0;
-			top: calc(5px + #{$mobile-inner-y-padding}/2);
-			z-index: 1;
-		}
-	}
-	.search-widget {
-		padding: $mobile-inner-y-padding $mobile-inner-x-padding;
-		margin-bottom: 1rem;
-	}
 	.top-menu {
 		.collapse-icons[aria-expanded="true"] {
 			.add {
@@ -234,6 +217,20 @@ $mobile-inner-y-padding: .625rem;
 
 	flex-direction: column;
 	background: white;
+
+	.responsive-menu-item {
+		position: relative;
+		&-caret {
+			position: absolute;
+			right: 0;
+			top: calc(5px + #{$mobile-inner-y-padding}/2);
+			z-index: 1;
+		}
+	}
+	.search-widget {
+		padding: $mobile-inner-y-padding $mobile-inner-x-padding;
+		margin-bottom: 1rem;
+	}
 }
 .overlay-bg {
 	background-color: transparent;

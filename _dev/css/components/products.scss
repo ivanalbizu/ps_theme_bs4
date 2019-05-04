@@ -207,7 +207,6 @@
   margin-bottom: $medium-space;
   position: relative;
   img {
-    @include box-shadow;
     background: white;
   }
   .layer {

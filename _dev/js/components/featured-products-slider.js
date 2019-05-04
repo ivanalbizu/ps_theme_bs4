@@ -1,11 +1,19 @@
+import Swiper from 'swiper/dist/js/swiper.min';
+
 export default class SwiperFeaturedProducts {
     init(){
         new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination',
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
             paginationClickable: true,
             slidesPerView: 4,
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
             spaceBetween: 0,//por defecto el grid de productos ya tiene su sepración
             grabCursor: true,
             breakpoints: {

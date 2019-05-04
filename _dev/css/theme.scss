@@ -192,3 +192,35 @@ ul, ol, menu, dir, figure {
   padding-inline-start: unset;
   padding-inline-end: unset;
 }
+
+.images-container {
+  overflow: hidden;
+}
+.swiper-container {
+  width: 100%;
+  height: 300px;
+  margin: 20px auto;
+}
+.gallery-top {
+  height: 80%;
+  width: 100%;
+}
+.gallery-thumbs {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+.gallery-thumbs .swiper-slide {
+  width: 20%;
+  height: 100%;
+  opacity: 0.4;
+}
+.gallery-thumbs .swiper-slide-active {
+  opacity: 1;
+}
+
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  opacity: 0;
+}
