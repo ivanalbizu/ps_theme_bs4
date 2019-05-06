@@ -15,7 +15,6 @@ export default class SwiperFeaturedProducts {
             paginationClickable: true,
             slidesPerView: 4,
             spaceBetween: 0,//por defecto el grid de productos ya tiene su sepración
-            grabCursor: true,
             breakpoints: {
                 1190: {
                     slidesPerView: 3,

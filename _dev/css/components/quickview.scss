@@ -20,13 +20,12 @@
   .layer {
     display: none;
   }
-  .product-cover img {
-    width: 95%;
-  }
   .images-container {
     display: flex;
+    flex-wrap: wrap;
+    text-align: center;
     z-index: 1;
-    min-height: 21.88rem;
+    //min-height: 21.88rem;
     .product-images > li.thumb-container > .thumb {
       width: 100%;
       max-width: 4.938rem;

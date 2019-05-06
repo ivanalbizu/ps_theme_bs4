@@ -124,7 +124,6 @@ INICIO: Images Product con SwiperJS
                   <div class="thumb-container">
                     <img itemprop="image"
                       class="thumb js-thumb {if $image.id_image == $product.cover.id_image} selected {/if}"
-                      style="width:100%;"
                       src = "{$image.bySize.home_default.url}"
                       alt = "{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}"
                       data-full-size-image-url = "{$image.bySize.large_default.url}"

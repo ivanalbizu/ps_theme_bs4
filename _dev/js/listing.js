@@ -29,7 +29,10 @@ import 'velocity-animate';
 import ProductMinitature from './components/product-miniature';
 import ViewModeProducts from './components/view-mode-products';
 
+import SwiperThumbsProduct from './components/gallery-thumbs-products-slider';
+
 $(document).ready(() => {
+  let swiperThumbsProduct = new SwiperThumbsProduct();
   prestashop.on('clickQuickView', function (elm) {
     let data = {
       'action': 'quickview',
@@ -41,6 +44,9 @@ $(document).ready(() => {
       let productModal = $(`#quickview-modal-${resp.product.id}-${resp.product.id_product_attribute}`);
       productModal.modal('show');
       productConfig(productModal);
+      setTimeout(function(){
+        swiperThumbsProduct.init();
+      },500);
       productModal.on('hidden.bs.modal', function () {
         productModal.remove();
       });
