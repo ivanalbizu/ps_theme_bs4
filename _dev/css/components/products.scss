@@ -77,6 +77,7 @@
 }
 .product-quantity {
   display: flex;
+  flex-wrap: wrap;
   .qty, .add {
     float: left;
     display: inline-flex;
@@ -267,11 +268,17 @@
         }
       }
       .product-images {
-        margin-left: $extra-large-space;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: .5rem;
+        > li.thumb-container {
+          width: 23%;
+        }
         img {
-          width: 9.25rem;
+          //width: 9.25rem;
+          //width: 30%;
           cursor: pointer;
-          background: white;
           &:hover {
             border: $brand-primary 3px solid;
           }

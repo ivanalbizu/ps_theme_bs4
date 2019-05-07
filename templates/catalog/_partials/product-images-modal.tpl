@@ -37,7 +37,7 @@
         </figure>
         <aside id="thumbnails" class="thumbnails js-thumbnails text-sm-center">
           {block name='product_images'}
-            <div class="js-modal-mask mask {if $imagesCount <= 5} nomargin {/if}">
+            <div class="js-modal-mask mask {if $imagesCount <= 5}mt-0{/if}">
               <ul class="product-images js-modal-product-images">
                 {foreach from=$product.images item=image}
                   <li class="thumb-container">

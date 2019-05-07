@@ -26,11 +26,13 @@
     text-align: center;
     z-index: 1;
     //min-height: 21.88rem;
-    .product-images > li.thumb-container > .thumb {
-      width: 100%;
-      max-width: 4.938rem;
-      margin-bottom: 0.8125rem;
-      background: white;
+    .product-images {
+      > li.thumb-container > .thumb {
+        width: 100%;
+        max-width: 4.938rem;
+        margin-bottom: 0.8125rem;
+        background: white;
+      }
     }
   }
   .mask {
