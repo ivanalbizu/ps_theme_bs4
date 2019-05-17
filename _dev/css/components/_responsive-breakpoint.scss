@@ -1,4 +1,4 @@
-@media(max-width: $breakpoint-menu-responsive) {
+@media(max-width: $breakpoint-menu-responsive - .02px) {
     .breakpoint-menu-responsive-hidden-down {
         display: none;
     }

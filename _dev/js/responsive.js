@@ -28,7 +28,10 @@ import prestashop from 'prestashop';
 prestashop.responsive = prestashop.responsive || {};
 
 prestashop.responsive.current_width = window.innerWidth;
-prestashop.responsive.min_width = 768;
+//TO-DO: Ajuste
+//Breakpoint menu
+//Actualizar también el valor CSS: $breakpoint-menu-responsive: 1000px; _dev/css/partials/_variables.scss
+prestashop.responsive.min_width = 1025;
 prestashop.responsive.mobile = prestashop.responsive.current_width < prestashop.responsive.min_width;
 
 function swapChildren(obj1, obj2)

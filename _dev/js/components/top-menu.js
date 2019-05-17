@@ -63,6 +63,7 @@ export default class TopMenu extends DropDown {
     prestashop.on('responsive update', function(event) {
       $('.js-sub-menu').removeAttr('style');
       self.toggleMobileMenu();
+      self.closeMenuChangeOrientation();
     });
     super.init();
   }
@@ -78,6 +79,14 @@ export default class TopMenu extends DropDown {
       //$('#wrapper').fadeIn(300);
       //$('#footer').fadeIn(300);
       //$('body').addClass("menu-open");      
+    }
+  }
+  //Método para cerrar menú en métodos nativos: 'responsive update'
+  //Sí se cambia orientación o se hace resize de pantalla y el menú está abierto, 
+  // se cerrará SIEMPRE que se produczca transicón UP/DOWN de breakpoint definido en: $breakpoint-menu-responsive: 1025px; / prestashop.responsive.min_width = 1025;
+  closeMenuChangeOrientation() {
+    if ($('body').hasClass("menu-open")) {
+      $('body').removeClass('menu-open');
     }
   }
 }

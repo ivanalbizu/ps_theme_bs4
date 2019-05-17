@@ -32,7 +32,7 @@
   <nav class="header-nav">
     <div class="container">
       {*Versión Desktop*}
-      <div class="row hidden-sm-down align-items-center">
+      <div class="row breakpoint-menu-responsive-hidden-down align-items-center">
         <div class="col-md-4 col-xs-12">
           {hook h='displayNav1'}
         </div>
@@ -41,7 +41,7 @@
         </div>
       </div>
       {*Versión Tablet y Mobile*}
-      <div class="row hidden-md-up text-sm-center mobile align-items-center justify-content-between">
+      <div class="row breakpoint-menu-responsive-hidden-up text-sm-center mobile align-items-center justify-content-between">
         <div>
           <svg class="ham hamRotate ham4 menu-ham-toggle" viewBox="0 0 100 100" width="60">
             <path
@@ -70,14 +70,14 @@
     <div class="container">
       {*Versión Desktop*}
       <div class="row align-items-center">
-        <div class="col-md-2 hidden-sm-down" id="_desktop_logo">
+        <div class="col-md-2 breakpoint-menu-responsive-hidden-down" id="_desktop_logo">
           <a href="{$urls.base_url}">
             <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
           </a>
         </div>
         <div class="col-md-10 col-sm-12">
           <div class="row align-items-center">
-            <div class="menu col-lg-8 col-md-7 js-top-menu hidden-sm-down" id="_desktop_top_menu">
+            <div class="menu col-lg-8 col-md-7 js-top-menu" id="_desktop_top_menu">
               {hook h='displayTopMainMenu'}
             </div>
             <div class="col-lg-4 col-md-5 col-sm-12 search-widget" id="_desktop_header-search">
@@ -88,21 +88,23 @@
       </div>
 
       {*Versión Tablet y Mobile*}
-      <div id="mobile_top_menu_wrapper" class="row hidden-md-up">
-        <svg class="ham hamRotate ham4 menu-ham-toggle" viewBox="0 0 100 100" width="60">
-          <path
-                class="line top"
-                d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
-          <path
-                class="line middle"
-                d="m 70,50 h -40" />
-          <path
-                class="line bottom"
-                d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
-        </svg>
-        <a href="{$urls.base_url}">
-          <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
-        </a>
+      <div id="mobile_top_menu_wrapper" class="row breakpoint-menu-responsive-hidden-up">
+        <div>
+          <svg class="ham hamRotate ham4 menu-ham-toggle" viewBox="0 0 100 100" width="60">
+            <path
+                  class="line top"
+                  d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+            <path
+                  class="line middle"
+                  d="m 70,50 h -40" />
+            <path
+                  class="line bottom"
+                  d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+          </svg>
+          <a href="{$urls.base_url}">
+            <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
+          </a>
+        </div>
         <div class="search-widget" id="_mobile_header-search"></div>
         <div class="js-top-menu mobile" id="_mobile_top_menu"></div>
         <div class="js-top-menu-bottom">

@@ -15,7 +15,8 @@ $btn-secondary-color: $gray-darker;
 $btn-secondary-bg: $gray-lighter;
 $btn-secondary-border: transparent;
 $btn-border-radius: 0;
-$input-border-color: rgba(0, 0, 0, 0.25);
+$input-border-color: rgba(0, 0, 0, 0.25);//
+$input-border-color-focus: #80bdff;//Nuevo
 $headings-font-weight: 700;
 $tooltip-bg: $brand-danger;
 $border-radius: 0;
@@ -60,5 +61,5 @@ $NotoSansVersion: "1.0.1";
 //Ajustar el valor en el que se produce transición entre menú Desktop a Responsive
 //Cuando se tenga Maquetado (tipografías, Textos reales...) según diseño Diseño
 //Se pregunta/comenta a Diseño a que Viewport se debe realizar ruptura
-//Actualizar también el valor JS: prestashop.responsive.min_width = 768; del fichero: _dev/js/responsive.js
-$breakpoint-menu-responsive: 768px;
+//Actualizar también el valor JS: prestashop.responsive.min_width = 100; del fichero: _dev/js/responsive.js
+$breakpoint-menu-responsive: 1025px;

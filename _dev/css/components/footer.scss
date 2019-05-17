@@ -3,13 +3,13 @@
   font-size: $font-size-sm;
   form {
     .input-wrapper {
-      overflow: hidden;
+      //overflow: hidden;
     }
     input[type=text] {
       padding: 11px;
       &:focus {
-        border: 3px $brand-primary solid;
-        padding: 8px 8px 9px;
+        //border: 3px $brand-primary solid;
+        //padding: 8px 8px 9px;
         outline: 0;
       }
       width: 100%;

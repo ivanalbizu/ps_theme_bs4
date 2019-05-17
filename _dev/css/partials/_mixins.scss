@@ -3,14 +3,14 @@
     position: relative;
     input[type=text] {
       &:focus {
-        outline: 3px $brand-primary solid;
+        //outline: 3px $brand-primary solid;
         color: $gray-darker;
         background: white;
+        border-color: $input-border-color-focus;
         + button .search {
           color: $brand-primary;
         }
       }
-      border: none;
       padding: 10px;
       min-width: 255px;
       color: $gray;

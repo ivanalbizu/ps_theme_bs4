@@ -29,23 +29,15 @@
     }
   }
 }
-/** CART BODY **/
+//CART BODY
 .cart-grid-body {
-  a.label {
-    &:hover {
-      color: $brand-primary;
-    }
-  }
   .card-block {
     padding: 1rem;
-    h1 {
-      margin-bottom: 0;
-    }
   }
   .cart-overview {
-    padding: 1rem;
+    //padding: 1rem;
   }
-  margin-bottom: 0.75rem;
+  margin-bottom: .75rem;
 }
 /** CART RIGHT **/
 .cart-grid-right {
@@ -156,11 +148,9 @@
   .cart-line-product-actions,
   .product-price {
     color: $gray-darker;
-    line-height: 36px;
     .remove-from-cart {
       color: $gray-darker;
       display: inline-block;
-      margin-top: 0.3125rem;
     }
   }
 }
@@ -183,9 +173,6 @@
     }
   }
   .cart-grid-body {
-    .cart-overview {
-      padding: 0;
-    }
     .no-items {
       padding: 1rem;
       display: inline-block;

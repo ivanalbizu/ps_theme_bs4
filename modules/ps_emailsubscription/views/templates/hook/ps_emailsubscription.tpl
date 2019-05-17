@@ -29,6 +29,7 @@
     <div class="btn-group col-xs-12">
       <div class="input-wrapper">
         <input
+          class="form-control"
           name="email"
           type="text"
           value="{$value}"

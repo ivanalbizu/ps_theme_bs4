@@ -28,8 +28,8 @@ a:hover {
   text-decoration: none;
 }
 p {
-  font-size: 0.9375rem;
-  color: $gray;
+  font-size: .9375rem;
+  //color: $gray;
   font-weight: 400;
 }
 .dropdown-item:focus,
@@ -122,8 +122,9 @@ small.label, small.value {
   border: $input-btn-border-width solid $input-border-color;
   padding: 0.5rem 1rem;
   &:focus {
-    background-color: white;
-    outline: 0.1875rem solid $brand-primary;
+    background-color: #FFF;
+    border: $input-btn-border-width solid $input-border-color-focus;
+    //outline: 0.1875rem solid $brand-primary;
     color: $gray-darker;
   }
 }
@@ -250,7 +251,7 @@ input, textarea {
     @extend .btn-default;
     background-color: white;
     border: $input-btn-border-width solid $input-border-color;
-    height: $input-height / 2 + 0.0625rem;
+    //height: $input-height / 2 + 0.0625rem;
     &:hover {
       background-color: $gray-light;
     }
@@ -261,9 +262,11 @@ input, textarea {
     float: left;
     .bootstrap-touchspin-up {
       border-radius: 0;
+      padding: 9px 10px;
     }
     .bootstrap-touchspin-down {
       border-radius: 0;
+      padding: 9px 10px;
     }
     .touchspin-up {
       &:after {

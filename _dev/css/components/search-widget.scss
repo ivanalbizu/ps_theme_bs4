@@ -1,5 +1,4 @@
 .search-widget {
-  float: right;
   @include search-box;
 }
 .header-top {
@@ -34,19 +33,11 @@
   }
 }
 
-/*** Responsive part ***/
+//Responsive part
 @include media-breakpoint-down(sm) {
   .header-top {
     .search-widget {
-      float: none;
       padding: 0 0.9375rem;
-      form {
-        margin: 0 auto;
-        input[type="text"] {
-          min-width: inherit;
-          background: white;
-        }
-      }
     }
   }
 }

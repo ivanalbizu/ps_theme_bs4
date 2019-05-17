@@ -129,7 +129,6 @@
                     </select>
                   </div>
                 {/foreach}
-                <div class="clearfix"></div>
               {/if}
             </td>
             <td class="text-xs-right">{$product.qty_returned}</td>

@@ -92,13 +92,15 @@
 
         {if $contact.allow_file_upload}
           <div class="form-group row">
-            <div class="col-md-9">
+            <div class="col-md-12">
               <label class="form-control-label" for="fileUpload">{l s='Attachment' d='Shop.Forms.Labels'}</label>
               <input type="file" id="fileUpload" name="fileUpload" class="filestyle" data-buttonText="{l s='Choose file' d='Shop.Theme.Actions'}">
             </div>
+            {*
             <span class="col-md-3 form-control-comment">
               {l s='optional' d='Shop.Forms.Help'}
             </span>
+            *}
           </div>
         {/if}
 
